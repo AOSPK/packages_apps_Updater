@@ -144,7 +144,7 @@
     <string name="menu_mobile_data_warning">Mobile data warning</string>
 
     <string name="blocked_update_dialog_title">Update blocked</string>
-    <string name="blocked_update_dialog_message">This update cannot be installed using the updater app.  Please flash the zip manually.</string>
+    <string name="blocked_update_dialog_message">This update cannot be installed using the updater app. You may need a factory reset (wipes all data) to install this zip. Please download and install the zip manually. </string>
 
     <string name="export_channel_title">Export completion</string>
     <string name="new_updates_channel_title">New updates</string>
