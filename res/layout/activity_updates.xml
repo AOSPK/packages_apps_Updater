@@ -39,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingBottom="16dp"
-                    android:textColor="@*android:color/accent_device_default_light"
+                    android:textColor="@android:color/white"
                     android:textSize="56sp" />
 
                 <TextView
@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/header_title"
-                    android:textColor="@*android:color/accent_device_default_light"
+                    android:textColor="@android:color/white"
                     android:textSize="12sp" />
 
                 <TextView
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/header_build_version"
-                    android:textColor="@*android:color/accent_device_default_light"
+                    android:textColor="@android:color/white"
                     android:textSize="12sp" />
 
                 <TextView
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/header_build_date"
-                    android:textColor="@*android:color/accent_device_default_light"
+                    android:textColor="@android:color/white"
                     android:textSize="12sp" />
             </RelativeLayout>
 
@@ -71,7 +71,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:textColor="@*android:color/accent_device_default_light"
+                android:textColor="@android:color/white"
                 app:layout_collapseMode="pin" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
