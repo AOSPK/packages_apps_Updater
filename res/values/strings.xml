@@ -82,6 +82,8 @@
     <string name="snack_updates_found">New updates found</string>
     <string name="snack_no_updates_found">No new updates found</string>
     <string name="snack_updates_check_failed">The update check failed. Please check your internet connection and try again later.</string>
+    <string name="snack_updates_server_down">Bad gateway, could not connect to server. Please try again later!</string>
+    <string name="snack_updates_download_client">Failed to initiate download client. RIP</string>
 
     <string name="snack_download_failed">The download failed. Please check your internet connection and try again later.</string>
     <string name="snack_download_verification_failed">The update verification failed.</string>
