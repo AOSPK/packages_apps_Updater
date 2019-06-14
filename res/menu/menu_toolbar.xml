@@ -14,4 +14,8 @@
         android:id="@+id/menu_show_changelog"
         android:title="@string/menu_show_changelog"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_sf_mirrors"
+        android:title="@string/sf_mirror_preferences"
+        app:showAsAction="never" />
 </menu>
