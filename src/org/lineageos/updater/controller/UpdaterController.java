@@ -502,7 +502,7 @@ public class UpdaterController {
         sorted_sf_mirrors = new LinkedHashMap<>();
         Map<String, String> rank_links = new LinkedHashMap<>();
         String projectname = Constants.SF_PROJECT_NAME;
-        String project_root_path = Constants.SF_PROJECT_ROOT_PATH;
+        String project_root_path = Constants.SF_PROJECT_ROOT_PATH_NAME + update.getVersion().split("v", 2)[1];
         String current_device = SystemProperties.get(Constants.PROP_DEVICE);
         String device_file = update.getName();
         String filepath = "/" + project_root_path + "/" + current_device + "/" + device_file;

@@ -21,7 +21,8 @@ public final class Constants {
     }
 
     public static final String SF_PROJECT_NAME = "arrow-os";
-    public static final String SF_PROJECT_ROOT_PATH = "arrow-9.x";
+    // version will be set according to the update version in the mirrors function
+    public static final String SF_PROJECT_ROOT_PATH_NAME = "arrow-";
 
     public static final String AB_PAYLOAD_BIN_PATH = "payload.bin";
     public static final String AB_PAYLOAD_PROPERTIES_PATH = "payload_properties.txt";
