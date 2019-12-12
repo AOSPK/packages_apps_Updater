@@ -49,6 +49,7 @@ public final class Constants {
     public static final String PROP_DEVICE = "ro.arrow.device";
     public static final String PROP_NEXT_DEVICE = "ro.updater.next_device";
     public static final String PROP_RELEASE_TYPE = "ro.arrow.releasetype";
+    public static final String PROP_ZIP_TYPE = "ro.arrow.ziptype";
     public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "lineage.updater.allow_downgrading";
     public static final String PROP_UPDATER_URI = "arrow.updater.uri";
 
