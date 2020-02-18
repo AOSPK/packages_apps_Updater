@@ -13,4 +13,5 @@
 
 <resources>
     <bool name="windowLightNavigationBar">true</bool>
+    <bool name="theme_is_light">true</bool>
 </resources>
