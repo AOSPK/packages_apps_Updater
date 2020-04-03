@@ -171,10 +171,7 @@ public class Utils {
     }
 
     public static String getChangelogURL(Context context) {
-	String genurl = "changelogs-" + SystemProperties.get(Constants.PROP_BUILD_VERSION).substring(1,5);
-        String changeurl = context.getString(R.string.menu_changelog_url);
-
-	return changeurl.replace("{version}", genurl).trim();
+        return context.getString(R.string.menu_changelog_url);
     }
 
     public static void triggerUpdate(Context context, String downloadId) {
