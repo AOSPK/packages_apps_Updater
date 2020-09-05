@@ -155,6 +155,8 @@ public class Utils {
         String device = SystemProperties.get(Constants.PROP_NEXT_DEVICE,
                 SystemProperties.get(Constants.PROP_DEVICE));
         String type = SystemProperties.get(Constants.PROP_RELEASE_TYPE).toLowerCase(Locale.ROOT);
+        String version = Constants.PROJECT_NAME_PREFIX
+                + SystemProperties.get(Constants.PROP_BUILD_VERSION).split("v")[1].toLowerCase(Locale.ROOT);
         String ziptype = SystemProperties.get(Constants.PROP_ZIP_TYPE).toLowerCase(Locale.ROOT);
 
         // Fallback to vanilla if prop was not found
@@ -166,6 +168,7 @@ public class Utils {
         }
 
         return serverUrl.replace("{device}", device)
+                .replace("{version}", version)
                 .replace("{type}", type)
                 .replace("{ziptype}", ziptype);
     }

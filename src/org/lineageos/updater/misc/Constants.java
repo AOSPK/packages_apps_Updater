@@ -20,6 +20,7 @@ public final class Constants {
     private Constants() {
     }
 
+    public static final String PROJECT_NAME_PREFIX = "arrow-";
     public static final String SF_PROJECT_NAME = "arrow-os";
     // version will be set according to the update version in the mirrors function
     public static final String SF_PROJECT_ROOT_PATH_NAME = "arrow-";
