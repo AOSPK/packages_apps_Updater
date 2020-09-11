@@ -76,7 +76,7 @@
     <string name="menu_copy_url">Copy URL</string>
     <string name="menu_export_update">Export update</string>
     <string name="menu_show_changelog">Show changelog</string>
-    <string name="menu_changelog_url" translatable="false">https://t.me/ArrowOS</string>
+    <string name="menu_changelog_url" translatable="false">https://changelog.arrowos.net/</string>
     <string name="menu_ab_perf_mode">Prioritize update process</string>
 
     <!-- Sourceforge mirrors -->
