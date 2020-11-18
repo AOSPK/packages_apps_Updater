@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background_selected">@android:color/black</color>
-    <color name="update_background">@android:color/white</color>
-    <color name="theme_primary">@android:color/white</color>
-    <color name="theme_primary_dark">@android:color/white</color>
+    <color name="theme_primary">@*android:color/primary_material_light</color>
+    <color name="theme_primary_dark">@*android:color/primary_material_settings_light</color>
     <color name="theme_accent">@*android:color/accent_device_default_light</color>
+
+    <color name="inverted">#212121</color>
     <color name="ic_background">#333333</color>
-    <color name="navigation_bar_color">@android:color/transparent</color>
-    <color name="header_title_text_color">@*android:color/accent_device_default_light</color>
-    <color name="header_title_version_text_color">@*android:color/accent_device_default_light</color>
-    <color name="header_build_version_text_color">@*android:color/accent_device_default_light</color>
-    <color name="header_device_name_text_color">@*android:color/accent_device_default_light</color>
-    <color name="header_build_date_text_color">@*android:color/accent_device_default_light</color>
-    <color name="toolbar_text_color">@*android:color/accent_device_default_light</color>
-    <color name="list_no_updates_text_color">@*android:color/accent_device_default_light</color>
 </resources>
