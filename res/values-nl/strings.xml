@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2017 The ArrowOS Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,12 +17,23 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Updater</string>
     <string name="display_name">Updater</string>
+    <!-- Directory where the update files will be downloaded and stored.
+         WARNING: The application can and will delete any unknown file. -->
+    <!-- Directory where the downloads will be exported to.
+         The path is relative to the root of the external storage.-->
+    <!--
+        Optional placeholders replaced at runtime:
+          {device} - Device name
+          {type} - Build type
+          {version} - Build version
+          {ziptype} - Build ziptype (vanilla/gapps)
+    -->
     <string name="verification_failed_notification">Verificatie mislukt</string>
     <string name="verifying_download_notification">Update verifiëren</string>
     <string name="downloading_notification">Downloaden</string>
     <string name="download_paused_notification">Download gepauzeerd</string>
-    <string name="download_paused_error_notification">Fout bij downloaden</string>
-    <string name="download_completed_notification">Downloaden voltooid</string>
+    <string name="download_paused_error_notification">Download fout</string>
+    <string name="download_completed_notification">Download voltooid</string>
     <string name="download_starting_notification">Download starten</string>
     <string name="update_failed_notification">Update mislukt</string>
     <string name="installation_suspended_notification">Installatie onderbroken</string>
@@ -30,16 +41,18 @@
     <string name="text_download_speed">%1$s, %2$s/s</string>
     <string name="pause_button">Pauzeren</string>
     <string name="resume_button">Hervatten</string>
-    <string name="suspend_button">Onderbreken</string>
-    <string name="installing_update">Update installeren</string>
+    <string name="suspend_button">Opschorten</string>
+    <string name="installing_update">Update pakket installeren</string>
     <string name="installing_update_error">Installatiefout</string>
     <string name="installing_update_finished">Update geïnstalleerd</string>
     <string name="finalizing_package">Installatie van het pakket afronden</string>
-    <string name="preparing_ota_first_boot">Eerste start voorbereiden</string>
-    <string name="dialog_prepare_zip_message">Update voorbereiden</string>
+    <string name="preparing_ota_first_boot">Eerste keer opstarten voorbereiden</string>
+    <string name="dialog_prepare_zip_message">Voorbereidende update-voorbereiding</string>
+    <string name="dialog_battery_low_title">Batterij bijna leeg</string>
+    <string name="dialog_battery_low_message_pct">Uw batterijniveau is te laag, u moet op zijn minst <xliff:g id="percent_discharging">%1$d</xliff:g>%% batterijcapaciteit hebben om door te gaan of <xliff:g id="percent_charging">%2$d</xliff:g>%% tijdens het opladen.</string>
     <string name="reboot">Herstarten</string>
     <string name="menu_refresh">Vernieuwen</string>
-    <string name="menu_preferences">Instellingen</string>
+    <string name="menu_preferences">Voorkeuren</string>
     <string name="menu_auto_updates_check">Automatisch controleren op updates</string>
     <string name="menu_auto_updates_check_interval_daily">Een keer per dag</string>
     <string name="menu_auto_updates_check_interval_weekly">Een keer per week</string>
@@ -49,36 +62,51 @@
     <string name="menu_delete_update">Verwijderen</string>
     <string name="menu_copy_url">URL kopiëren</string>
     <string name="menu_export_update">Update exporteren</string>
-    <string name="menu_show_changelog">Changelog weergeven</string>
+    <string name="menu_show_changelog">Changelog tonen</string>
+    <string name="menu_ab_perf_mode">Geef prioriteit aan het updateproces</string>
+    <!-- Sourceforge mirrors -->
+    <string name="sf_dialog_title">Beschikbare Mirrors</string>
+    <string name="menu_sf_mirrors">Mirrors</string>
+    <string name="sf_mirror_preferences">Voorkeuren Mirrors</string>
+    <string name="rank_and_sort_mirrors">Rang en sorteer de Mirrors</string>
     <string name="snack_updates_found">Nieuwe updates gevonden</string>
     <string name="snack_no_updates_found">Geen nieuwe updates gevonden</string>
     <string name="snack_updates_check_failed">Kan niet controleren op updates. Controleer uw internetverbinding en probeer het later opnieuw.</string>
+    <string name="snack_updates_server_down">Slechte gateway, kon geen verbinding maken met de server. Probeer het later opnieuw!</string>
+    <string name="snack_updates_download_client">Kon geen download-client initiëren. RIP</string>
+    <string name="snack_ranking_sf_mirrors">Rankeren sourceforge mirrors. Wacht alstublieft!</string>
+    <string name="snack_fetching_sf_mirrors">Ophalen sourceforge mirrors. Wacht alstublieft!</string>
+    <string name="snack_failed_sf_mirrors">Fout bij het ophalen van sourceforge mirrors.</string>
+    <string name="snack_fetched_sf_mirrors">Sourceforge mirrors opgehaald. Klaar!</string>
+    <string name="snack_set_sf_mirror">Mirror ingesteld op %1$s!</string>
+    <string name="snack_force_sf_mirror">Eerder geselecteerde Mirror %1$s is niet gevonden! Terugvallen naar standaard.</string>
     <string name="snack_download_failed">Downloaden mislukt. Controleer uw internetverbinding en probeer het later opnieuw.</string>
     <string name="snack_download_verification_failed">Verificatie van de update mislukt.</string>
-    <string name="snack_download_verified">Downloaden voltooid.</string>
-    <string name="snack_update_not_installable">Deze update kan niet worden geïnstalleerd bovenop de huidige versie.</string>
+    <string name="snack_download_verified">Download voltooid.</string>
+    <string name="snack_update_not_installable">Deze update kan niet worden geïnstalleerd bovenop de huidige build.</string>
     <string name="header_title_text">ArrowOS\n%1$s</string>
     <string name="header_android_version">Android <xliff:g id="version" example="7.1.2">%1$s</xliff:g></string>
     <string name="header_last_updates_check">Laatst gecontroleerd: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
     <string name="list_build_version">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
     <string name="list_build_version_date">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> van <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> van <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minuten te gaan">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
     <string name="list_verifying_update">Update verifiëren</string>
     <string name="list_no_updates">Geen nieuwe updates gevonden. Gebruik de knop Vernieuwen om handmatig te controleren op nieuwe updates.</string>
     <string name="action_download">Downloaden</string>
     <string name="action_pause">Pauzeren</string>
     <string name="action_resume">Hervatten</string>
     <string name="action_install">Installeren</string>
-    <string name="action_info">Informatie</string>
+    <string name="action_info">Info</string>
     <string name="action_delete">Verwijderen</string>
     <string name="action_cancel">Annuleren</string>
-    <string name="confirm_delete_dialog_title">Bestand verwijderen</string>
-    <string name="confirm_delete_dialog_message">Geselecteerde update-bestand verwijderen?</string>
+    <string name="confirm_delete_dialog_title">Verwijder bestand</string>
+    <string name="confirm_delete_dialog_message">Het geselecteerde update bestand verwijderen?</string>
     <string name="apply_update_dialog_title">Update toepassen</string>
-    <string name="apply_update_dialog_message">Uw systeem wordt bijgewerkt naar <xliff:g id="update_name">%1$s</xliff:g>.\n\nWanneer u op <xliff:g id="ok">%2$s</xliff:g> tikt, zal het apparaat herstarten naar recovery om de update te installeren.\n\nLet op: een compatibele recovery is vereist, anders moet de update handmatig worden geïnstalleerd.</string>
-    <string name="apply_update_dialog_message_ab">Uw systeem wordt bijgewerkt naar <xliff:g id="update_name">%1$s</xliff:g>.\n\nWanneer u op <xliff:g id="ok">%2$s</xliff:g> tikt, zal het apparaat de update op de achtergrond uitvoeren.\n\nWanneer de installatie voltooid is zal gevraagd worden het toestel te herstarten.</string>
+    <string name="apply_update_dialog_message">Uw systeem wordt bijgewerkt naar <xliff:g id="update_name">%1$s</xliff:g>.\n\nWanneer u op <xliff:g id="ok">%2$s</xliff:g> tikt, zal het apparaat herstarten naar de herstelmodus om de update te installeren.\n\nLet op: een compatibele Recovery is vereist, anders moet de update handmatig worden geïnstalleerd.</string>
+    <string name="apply_update_dialog_message_ab">U staat op het punt om uw toestel bij te werken naar <xliff:g id="update_name">%1$s</xliff:g>.\n\nAls u op <xliff:g id="ok">%2$s</xliff:g> tikt, zal het apparaat de update op de achtergrond uitvoeren.\n\nZodra de installatie voltooid is, zal gevraagd worden om het apparaat te herstarten.</string>
     <string name="cancel_installation_dialog_message">Installatie annuleren?</string>
-    <string name="label_download_url">Download-URL</string>
+    <string name="label_download_url">Download URL</string>
     <string name="toast_download_url_copied">URL gekopieerd</string>
     <string name="dialog_export_title">Update exporteren</string>
     <string name="notification_export_success">Update geëxporteerd</string>
@@ -94,15 +122,16 @@
     </plurals>
     <plurals name="eta_hours">
         <item quantity="one">1 uur resterend</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> uur resterend</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> uren resterend</item>
     </plurals>
-    <string name="update_on_mobile_data_title">Let op</string>
-    <string name="update_on_mobile_data_message">U staat op het punt een update te downloaden via mobiele gegevens, wat tot een hoog gegevensgebruik kan leiden. Wilt u verder gaan?</string>
+    <string name="update_on_mobile_data_title">Waarschuwing</string>
+    <string name="update_on_mobile_data_message">U staat op het punt om een updatepakket te downloaden via mobiele data, wat een hoog gegevensgebruik tot gevolg kan hebben. Wilt u verder gaan?</string>
     <string name="checkbox_mobile_data_warning">Niet opnieuw tonen</string>
     <string name="menu_mobile_data_warning">Waarschuwing mobiele gegevens</string>
     <string name="blocked_update_dialog_title">Update geblokkeerd</string>
-    <string name="blocked_update_dialog_message">Deze update kan niet worden geïnstalleerd met behulp van de updater-app. Lees <xliff:g id="info_url">%1$s</xliff:g> voor meer informatie.</string>
+    <string name="blocked_update_dialog_message">Deze update kan niet worden geïnstalleerd met behulp van de updater-app. U heeft een reset naar de fabrieksinstellingen nodig (wist alle gegevens) om deze zip te installeren. Download en installeer de zip handmatig. </string>
     <string name="export_channel_title">Exporteren voltooid</string>
     <string name="new_updates_channel_title">Nieuwe updates</string>
+    <string name="ongoing_channel_title">Huidige downloads</string>
     <string name="update_failed_channel_title">Update mislukt</string>
 </resources>
