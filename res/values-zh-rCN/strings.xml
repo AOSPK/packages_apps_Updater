@@ -80,7 +80,7 @@
     <string name="snack_fetched_sf_mirrors">已获取 sourceforge 镜像。完成！</string>
     <string name="snack_set_sf_mirror">镜像设置为 %1$s！</string>
     <string name="snack_force_sf_mirror">上次选择的镜像 %1$s 未找到！回退至默认。</string>
-    <string name="snack_download_failed">下载失败。 请检查您的网络连接并稍后重试。</string>
+    <string name="snack_download_failed">下载失败。请检查您的网络连接并稍后重试。</string>
     <string name="snack_download_verification_failed">更新验证失败。</string>
     <string name="snack_download_verified">下载已完成。</string>
     <string name="snack_update_not_installable">此更新无法在当前版本的基础上安装。</string>

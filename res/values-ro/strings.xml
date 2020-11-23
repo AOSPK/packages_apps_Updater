@@ -61,16 +61,16 @@
     <string name="menu_auto_delete_updates">Delete updates when installed</string>
     <string name="menu_delete_update">Delete</string>
     <string name="menu_copy_url">Copy URL</string>
-    <string name="menu_export_update">Export update</string>
-    <string name="menu_show_changelog">Show changelog</string>
+    <string name="menu_export_update">Exportă actualizare</string>
+    <string name="menu_show_changelog">Arată jurnalul modificărilor</string>
     <string name="menu_ab_perf_mode">Prioritize update process</string>
     <!-- Sourceforge mirrors -->
     <string name="sf_dialog_title">Available Mirrors</string>
     <string name="menu_sf_mirrors">Mirrors</string>
     <string name="sf_mirror_preferences">Mirror preferences</string>
     <string name="rank_and_sort_mirrors">Rank and sort the mirrors</string>
-    <string name="snack_updates_found">New updates found</string>
-    <string name="snack_no_updates_found">No new updates found</string>
+    <string name="snack_updates_found">Actualizări noi găsite</string>
+    <string name="snack_no_updates_found">Nu s-au găsit actualizări noi</string>
     <string name="snack_updates_check_failed">The update check failed. Please check your internet connection and try again later.</string>
     <string name="snack_updates_server_down">Bad gateway, could not connect to server. Please try again later!</string>
     <string name="snack_updates_download_client">Failed to initiate download client. RIP</string>
