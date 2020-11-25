@@ -99,7 +99,7 @@
     <string name="action_install">Install</string>
     <string name="action_info">Info</string>
     <string name="action_delete">Delete</string>
-    <string name="action_cancel">Cancel</string>
+    <string name="action_cancel">Abbrechen</string>
     <string name="confirm_delete_dialog_title">Delete file</string>
     <string name="confirm_delete_dialog_message">Delete the selected update file?</string>
     <string name="apply_update_dialog_title">Apply update</string>
