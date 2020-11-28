@@ -36,7 +36,7 @@
     <string name="download_completed_notification">Descarga completada</string>
     <string name="download_starting_notification">Iniciando descarga</string>
     <string name="update_failed_notification">Se ha producido un error en la actualización</string>
-    <string name="installation_suspended_notification">Se ha suspendido la actualización</string>
+    <string name="installation_suspended_notification">Instalación suspendida</string>
     <string name="new_updates_found_title">¡Nueva actualización disponible!</string>
     <string name="text_download_speed">%1$s, %2$s/s</string>
     <string name="pause_button">Pausado</string>

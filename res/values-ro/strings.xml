@@ -37,7 +37,7 @@
     <string name="download_starting_notification">Starting download</string>
     <string name="update_failed_notification">Update failed</string>
     <string name="installation_suspended_notification">Installation suspended</string>
-    <string name="new_updates_found_title">New updates</string>
+    <string name="new_updates_found_title">Actualizări noi</string>
     <string name="text_download_speed">%1$s, %2$s/s</string>
     <string name="pause_button">Pause</string>
     <string name="resume_button">Resume</string>
@@ -52,12 +52,12 @@
     <string name="dialog_battery_low_message_pct">The battery level is too low, you need at least <xliff:g id="percent_discharging">%1$d</xliff:g>%% of the battery to continue, <xliff:g id="percent_charging">%2$d</xliff:g>%% if charging.</string>
     <string name="reboot">Reboot</string>
     <string name="menu_refresh">Refresh</string>
-    <string name="menu_preferences">Preferences</string>
+    <string name="menu_preferences">Preferințe</string>
     <string name="menu_auto_updates_check">Auto updates check</string>
     <string name="menu_auto_updates_check_interval_daily">Once a day</string>
     <string name="menu_auto_updates_check_interval_weekly">Once a week</string>
     <string name="menu_auto_updates_check_interval_monthly">Once a month</string>
-    <string name="menu_auto_updates_check_interval_never">Never</string>
+    <string name="menu_auto_updates_check_interval_never">Niciodată</string>
     <string name="menu_auto_delete_updates">Delete updates when installed</string>
     <string name="menu_delete_update">Delete</string>
     <string name="menu_copy_url">Copy URL</string>
@@ -82,7 +82,7 @@
     <string name="snack_force_sf_mirror">Previously selected mirror %1$s was not found! Fallback to default.</string>
     <string name="snack_download_failed">The download failed. Please check your internet connection and try again later.</string>
     <string name="snack_download_verification_failed">The update verification failed.</string>
-    <string name="snack_download_verified">Download completed.</string>
+    <string name="snack_download_verified">Descărcare finalizată.</string>
     <string name="snack_update_not_installable">This update can\'t be installed on top of the current build.</string>
     <string name="header_title_text">ArrowOS\n%1$s</string>
     <string name="header_android_version">Android <xliff:g id="version" example="7.1.2">%1$s</xliff:g></string>
@@ -92,7 +92,7 @@
     <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
     <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
     <string name="list_verifying_update">Verifying update</string>
-    <string name="list_no_updates">No new updates found. To manually check for new updates, use the Refresh button.</string>
+    <string name="list_no_updates">Nu au fost găsite actualizări noi. Pentru a verifica manual existenţa actualizărilor noi, utilizaţi butonul Reîmprospătare.</string>
     <string name="action_download">Download</string>
     <string name="action_pause">Pause</string>
     <string name="action_resume">Resume</string>
@@ -113,17 +113,17 @@
     <string name="notification_export_fail">Export error</string>
     <string name="toast_already_exporting">Already exporting an update</string>
     <plurals name="eta_seconds">
-        <item quantity="one">1 second left</item>
+        <item quantity="one">1 secundă rămasă</item>
         <item quantity="few"><xliff:g id="count">%d</xliff:g> seconds left</item>
         <item quantity="other"><xliff:g id="count">%d</xliff:g> seconds left</item>
     </plurals>
     <plurals name="eta_minutes">
-        <item quantity="one">1 minute left</item>
+        <item quantity="one">1 minut rămas</item>
         <item quantity="few"><xliff:g id="count">%d</xliff:g> minutes left</item>
         <item quantity="other"><xliff:g id="count">%d</xliff:g> minutes left</item>
     </plurals>
     <plurals name="eta_hours">
-        <item quantity="one">1 hour left</item>
+        <item quantity="one">1 oră rămasă</item>
         <item quantity="few"><xliff:g id="count">%d</xliff:g> hours left</item>
         <item quantity="other"><xliff:g id="count">%d</xliff:g> hours left</item>
     </plurals>
@@ -134,7 +134,7 @@
     <string name="blocked_update_dialog_title">Update blocked</string>
     <string name="blocked_update_dialog_message">This update cannot be installed using the updater app. You may need a factory reset (wipes all data) to install this zip. Please download and install the zip manually. </string>
     <string name="export_channel_title">Export completion</string>
-    <string name="new_updates_channel_title">New updates</string>
+    <string name="new_updates_channel_title">Actualizări noi</string>
     <string name="ongoing_channel_title">Ongoing downloads</string>
     <string name="update_failed_channel_title">Update failed</string>
 </resources>
