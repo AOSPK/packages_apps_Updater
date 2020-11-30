@@ -15,8 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Updater</string>
-    <string name="display_name">Updater</string>
+    <string name="app_name">Pembaruan</string>
+    <string name="display_name">Pembaruan</string>
     <!-- Directory where the update files will be downloaded and stored.
          WARNING: The application can and will delete any unknown file. -->
     <!-- Directory where the downloads will be exported to.
@@ -28,42 +28,42 @@
           {version} - Build version
           {ziptype} - Build ziptype (vanilla/gapps)
     -->
-    <string name="verification_failed_notification">Verification failed</string>
-    <string name="verifying_download_notification">Verifying update</string>
-    <string name="downloading_notification">Downloading</string>
-    <string name="download_paused_notification">Download paused</string>
-    <string name="download_paused_error_notification">Download error</string>
-    <string name="download_completed_notification">Download completed</string>
-    <string name="download_starting_notification">Starting download</string>
-    <string name="update_failed_notification">Update failed</string>
-    <string name="installation_suspended_notification">Installation suspended</string>
-    <string name="new_updates_found_title">New updates</string>
-    <string name="text_download_speed">%1$s, %2$s/s</string>
-    <string name="pause_button">Pause</string>
-    <string name="resume_button">Resume</string>
-    <string name="suspend_button">Suspend</string>
-    <string name="installing_update">Installing update package</string>
-    <string name="installing_update_error">Install error</string>
-    <string name="installing_update_finished">Update installed</string>
-    <string name="finalizing_package">Finalizing package installation</string>
-    <string name="preparing_ota_first_boot">Preparing for first boot</string>
-    <string name="dialog_prepare_zip_message">Preliminary update preparation</string>
-    <string name="dialog_battery_low_title">Low battery</string>
-    <string name="dialog_battery_low_message_pct">The battery level is too low, you need at least <xliff:g id="percent_discharging">%1$d</xliff:g>%% of the battery to continue, <xliff:g id="percent_charging">%2$d</xliff:g>%% if charging.</string>
-    <string name="reboot">Reboot</string>
-    <string name="menu_refresh">Refresh</string>
-    <string name="menu_preferences">Preferences</string>
-    <string name="menu_auto_updates_check">Auto updates check</string>
-    <string name="menu_auto_updates_check_interval_daily">Once a day</string>
-    <string name="menu_auto_updates_check_interval_weekly">Once a week</string>
-    <string name="menu_auto_updates_check_interval_monthly">Once a month</string>
-    <string name="menu_auto_updates_check_interval_never">Never</string>
-    <string name="menu_auto_delete_updates">Delete updates when installed</string>
-    <string name="menu_delete_update">Delete</string>
-    <string name="menu_copy_url">Copy URL</string>
-    <string name="menu_export_update">Export update</string>
-    <string name="menu_show_changelog">Show changelog</string>
-    <string name="menu_ab_perf_mode">Prioritize update process</string>
+    <string name="verification_failed_notification">Verifikasi gagal</string>
+    <string name="verifying_download_notification">Memverifikasi pembaruan</string>
+    <string name="downloading_notification">Mengunduh</string>
+    <string name="download_paused_notification">Unduhan dijeda</string>
+    <string name="download_paused_error_notification">Kesalahan pengunduhan</string>
+    <string name="download_completed_notification">Unduhan selesai</string>
+    <string name="download_starting_notification">Memulai mengunduh</string>
+    <string name="update_failed_notification">Gagal memperbaharui</string>
+    <string name="installation_suspended_notification">Pemasangan ditunda</string>
+    <string name="new_updates_found_title">Pembaruan baru</string>
+    <string name="text_download_speed">%1$s, %2$s/d</string>
+    <string name="pause_button">Jeda</string>
+    <string name="resume_button">Lanjut</string>
+    <string name="suspend_button">Tunda</string>
+    <string name="installing_update">Memasang paket pembaruan</string>
+    <string name="installing_update_error">Kesalahan pemasangan</string>
+    <string name="installing_update_finished">Pembaruan dipasang</string>
+    <string name="finalizing_package">Menyelesaikan pemasangan paket</string>
+    <string name="preparing_ota_first_boot">Mempersiapkan untuk boot pertama</string>
+    <string name="dialog_prepare_zip_message">Persiapan awal pembaruan</string>
+    <string name="dialog_battery_low_title">Baterai lemah</string>
+    <string name="dialog_battery_low_message_pct">Tingkat baterai terlalu rendah, Anda memerlukan setidaknya <xliff:g id="percent_discharging">%1$d</xliff:g>%% baterai untuk melanjutkan, <xliff:g id="percent_charging">%2$d</xliff:g>%% jika saat pengisian.</string>
+    <string name="reboot">Mulai Ulang</string>
+    <string name="menu_refresh">Perbarui</string>
+    <string name="menu_preferences">Preferensi</string>
+    <string name="menu_auto_updates_check">Periksa pembaruan otomatis</string>
+    <string name="menu_auto_updates_check_interval_daily">Sekali sehari</string>
+    <string name="menu_auto_updates_check_interval_weekly">Seminggu sekali</string>
+    <string name="menu_auto_updates_check_interval_monthly">Sebulan sekali</string>
+    <string name="menu_auto_updates_check_interval_never">Jangan pernah</string>
+    <string name="menu_auto_delete_updates">Hapus pembaruan saat selesai terpasang</string>
+    <string name="menu_delete_update">Hapus</string>
+    <string name="menu_copy_url">Salin URL</string>
+    <string name="menu_export_update">Ekspor pembaruan</string>
+    <string name="menu_show_changelog">Tampilkan catatan perubahan</string>
+    <string name="menu_ab_perf_mode">Prioritaskan proses pembaruan</string>
     <!-- Sourceforge mirrors -->
     <string name="sf_dialog_title">Available Mirrors</string>
     <string name="menu_sf_mirrors">Mirrors</string>

@@ -104,7 +104,7 @@
     <string name="confirm_delete_dialog_message">Seçilen güncelleme dosyası silinsin mi?</string>
     <string name="apply_update_dialog_title">Güncellemeyi uygula</string>
     <string name="apply_update_dialog_message">Güncellemek üzeresiniz <xliff:g id="update_name">%1$s</xliff:g>.\n\neğer basarsan <xliff:g id="ok">%2$s</xliff:g>,cihaz güncellemeyi yüklemek için kurtarma modunda kendini yeniden başlatacak.\n\nNot: Bu özellik uyumlu bir recovery gerektirir veya güncellemelerin manuel olarak yüklenmesi gerekir.</string>
-    <string name="apply_update_dialog_message_ab">You are about to upgrade to <xliff:g id="update_name">%1$s</xliff:g>.\n\nIf you press <xliff:g id="ok">%2$s</xliff:g>, the device will begin installing in the background.\n\nOnce completed, you will be prompted to reboot.</string>
+    <string name="apply_update_dialog_message_ab">Yükseltmek üzeresiniz. <xliff:g id="update_name">%1$s</xliff:g>.\n\nEğer basarsanız <xliff:g id="ok">%2$s</xliff:g>, cihaz arka planda kuruluma başlayacaktır.\n\nİşlem tamamlandığında, yeniden başlatmanız istenir.</string>
     <string name="cancel_installation_dialog_message">Kurulum iptal edilsin mi?</string>
     <string name="label_download_url">URL\'yi indir</string>
     <string name="toast_download_url_copied">URL kopyalandı</string>
@@ -114,14 +114,14 @@
     <string name="toast_already_exporting">Zaten bir güncelleme dışa aktarılıyor</string>
     <plurals name="eta_seconds">
         <item quantity="one">1 saniye kaldı</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> seconds left</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> saniye kaldı</item>
     </plurals>
     <plurals name="eta_minutes">
-        <item quantity="one">1 minute left</item>
+        <item quantity="one">1 dakika kaldı</item>
         <item quantity="other"><xliff:g id="count">%d</xliff:g> dakika kaldı</item>
     </plurals>
     <plurals name="eta_hours">
-        <item quantity="one">1 hour left</item>
+        <item quantity="one">1 saat kaldı</item>
         <item quantity="other"><xliff:g id="count">%d</xliff:g> saat kaldı</item>
     </plurals>
     <string name="update_on_mobile_data_title">Uyarı</string>
