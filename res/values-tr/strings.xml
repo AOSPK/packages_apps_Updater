@@ -65,21 +65,21 @@
     <string name="menu_show_changelog">Değişiklikleri göster</string>
     <string name="menu_ab_perf_mode">Güncelleme işlemine öncelik ver</string>
     <!-- Sourceforge mirrors -->
-    <string name="sf_dialog_title">Available Mirrors</string>
+    <string name="sf_dialog_title">Mevcut Alternatifler</string>
     <string name="menu_sf_mirrors">Alternatif</string>
-    <string name="sf_mirror_preferences">Mirror preferences</string>
-    <string name="rank_and_sort_mirrors">Rank and sort the mirrors</string>
+    <string name="sf_mirror_preferences">Alternatif tercihleri</string>
+    <string name="rank_and_sort_mirrors">Alternatifleri çeşitleyin ve sıralayın</string>
     <string name="snack_updates_found">Yeni güncellemeler bulundu</string>
     <string name="snack_no_updates_found">Yeni güncelleme yok</string>
     <string name="snack_updates_check_failed">Güncelleme kontrolü başarısız oldu. Lütfen internet bağlantınızı kontrol edin ve daha sonra tekrar deneyin.</string>
     <string name="snack_updates_server_down">Üzgünüz, sunucuya bağlanılamadı. Lütfen daha sonra tekrar dene!</string>
     <string name="snack_updates_download_client">İndirme istemcisi başlatılamadı. HUZUR İÇİNDE YATSIN</string>
-    <string name="snack_ranking_sf_mirrors">Ranking sourceforge mirrors. Please wait!</string>
-    <string name="snack_fetching_sf_mirrors">Fetching sourceforge mirrors. Please wait!</string>
-    <string name="snack_failed_sf_mirrors">Failed to fetch sourceforge mirrors.</string>
-    <string name="snack_fetched_sf_mirrors">Fetched sourceforge mirrors. Done!</string>
-    <string name="snack_set_sf_mirror">Mirror set to %1$s!</string>
-    <string name="snack_force_sf_mirror">Previously selected mirror %1$s was not found! Fallback to default.</string>
+    <string name="snack_ranking_sf_mirrors">Sourceforge alternatifleri sıralanıyor. Lütfen bekleyin!</string>
+    <string name="snack_fetching_sf_mirrors">Sourceforge alternatifleri getiriliyor. Lütfen bekleyin!</string>
+    <string name="snack_failed_sf_mirrors">Sourceforge alternatifleri getirilemedi.</string>
+    <string name="snack_fetched_sf_mirrors">Sourceforge alternatifleri getirildi. Bitti!</string>
+    <string name="snack_set_sf_mirror">Alternatif şuna ayarlandı: %1$s!</string>
+    <string name="snack_force_sf_mirror">Bir önceki seçtiğiniz alternatif %1$s bulunamadı! Varsayılana dönülüyor.</string>
     <string name="snack_download_failed">Güncelleme indirilemedi. Lütfen internet bağlantınızı kontrol edin ve daha sonra tekrar deneyin.</string>
     <string name="snack_download_verification_failed">Güncelleme doğrulaması başarısız oldu.</string>
     <string name="snack_download_verified">İndirme tamamlandı.</string>
@@ -89,8 +89,8 @@
     <string name="header_last_updates_check">Son kontrol: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
     <string name="list_build_version">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
     <string name="list_build_version_date">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g><xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
-    <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
-    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
+    <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g><xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> •<xliff:g id="percentage" example="56">%3$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g><xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g>(<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) •<xliff:g id="percentage" example="56">%4$s</xliff:g></string>
     <string name="list_verifying_update">Güncelleme doğrulanıyor</string>
     <string name="list_no_updates">Yeni güncelleme bulunamadı. Yeni güncellemeleri manuel olarak kontrol etmek için yenile tuşunu kullanın.</string>
     <string name="action_download">İndir</string>
