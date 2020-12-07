@@ -139,5 +139,5 @@
     <string name="export_channel_title">Eksport zakończony</string>
     <string name="new_updates_channel_title">Nowe aktualizacje</string>
     <string name="ongoing_channel_title">Bieżące pobierania</string>
-    <string name="update_failed_channel_title">Aktualiza nie powiodła się</string>
+    <string name="update_failed_channel_title">Aktualizacja nie powiodła się</string>
 </resources>
