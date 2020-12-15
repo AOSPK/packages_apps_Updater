@@ -52,7 +52,7 @@
     <string name="dialog_battery_low_message_pct">The battery level is too low, you need at least <xliff:g id="percent_discharging">%1$d</xliff:g>%% of the battery to continue, <xliff:g id="percent_charging">%2$d</xliff:g>%% if charging.</string>
     <string name="reboot">Neustart</string>
     <string name="menu_refresh">Aktualisieren</string>
-    <string name="menu_preferences">Preferences</string>
+    <string name="menu_preferences">Einstellungen</string>
     <string name="menu_auto_updates_check">Auto updates check</string>
     <string name="menu_auto_updates_check_interval_daily">Einmal täglich</string>
     <string name="menu_auto_updates_check_interval_weekly">Einmal wöchentlich</string>

@@ -53,7 +53,7 @@
     <string name="reboot">再起動</string>
     <string name="menu_refresh">更新</string>
     <string name="menu_preferences">設定</string>
-    <string name="menu_auto_updates_check">アップデートの自動確認</string>
+    <string name="menu_auto_updates_check">自動確認</string>
     <string name="menu_auto_updates_check_interval_daily">毎日</string>
     <string name="menu_auto_updates_check_interval_weekly">毎週</string>
     <string name="menu_auto_updates_check_interval_monthly">毎月</string>
@@ -72,10 +72,10 @@
     <string name="snack_updates_found">アップデートが見つかりました</string>
     <string name="snack_no_updates_found">新しいアップデートはありません</string>
     <string name="snack_updates_check_failed">アップデートの確認に失敗しました。インターネット接続を確認し、しばらくしてからもう一度お試し下さい。</string>
-    <string name="snack_updates_server_down">不正なゲートウェイです。後でもう一度お試しください。</string>
+    <string name="snack_updates_server_down">不正なゲートウェイです。後でもう一度お試し下さい。</string>
     <string name="snack_updates_download_client">ダウンロードクライアントの開始に失敗しました。RIP</string>
-    <string name="snack_ranking_sf_mirrors">Sourceforge ミラーのランク中です。しばらくお待ちください!</string>
-    <string name="snack_fetching_sf_mirrors">Sourceforge ミラーの取得中です。しばらくお待ちください!</string>
+    <string name="snack_ranking_sf_mirrors">Sourceforge ミラーのランク中です。しばらくお待ち下さい!</string>
+    <string name="snack_fetching_sf_mirrors">Sourceforge ミラーの取得中です。しばらくお待ち下さい!</string>
     <string name="snack_failed_sf_mirrors">Sourceforge ミラーの取得に失敗しました。</string>
     <string name="snack_fetched_sf_mirrors">Sourceforge ミラーを取得しました。完了です!</string>
     <string name="snack_set_sf_mirror">ミラーを %1$s に設定しました!</string>
@@ -126,7 +126,7 @@
     <string name="checkbox_mobile_data_warning">今後表示しない</string>
     <string name="menu_mobile_data_warning">モバイルデータの警告</string>
     <string name="blocked_update_dialog_title">アップデートをブロックしました</string>
-    <string name="blocked_update_dialog_message">このアップデートはアップデーターアプリを使用してインストールできません。この Zip をインストールするには工場出荷時の状態にリセット (全データ消去) する必要がある場合があります。Zip を手動でダウンロードしてインストールしてください。</string>
+    <string name="blocked_update_dialog_message">このアップデートはアップデーターアプリを使用してインストールできません。この Zip をインストールするには工場出荷時の状態にリセット (全データ消去) する必要がある場合があります。Zip を手動でダウンロードしてインストールして下さい。</string>
     <string name="export_channel_title">エクスポート完了</string>
     <string name="new_updates_channel_title">新しいアップデート</string>
     <string name="ongoing_channel_title">実行中のダウンロード</string>
