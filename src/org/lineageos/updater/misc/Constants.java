@@ -53,6 +53,7 @@ public final class Constants {
     public static final String PROP_ZIP_TYPE = "ro.arrow.ziptype";
     public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "lineage.updater.allow_downgrading";
     public static final String PROP_UPDATER_URI = "arrow.updater.uri";
+    public static final String PROP_BLOCK_UPDATER = "ro.block_updater";
 
     public static final String PREF_INSTALL_OLD_TIMESTAMP = "install_old_timestamp";
     public static final String PREF_INSTALL_NEW_TIMESTAMP = "install_new_timestamp";

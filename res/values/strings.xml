@@ -160,7 +160,8 @@
     <string name="menu_mobile_data_warning">Mobile data warning</string>
 
     <string name="blocked_update_dialog_title">Update blocked</string>
-    <string name="blocked_update_dialog_message">This update cannot be installed using the updater app. You may need a factory reset (wipes all data) to install this zip. Please download and install the zip manually. </string>
+    <string name="blocked_update_dialog_message">This update cannot be installed using the updater app. You may need a factory reset (wipes all data) to install this zip. Please download and install the zip manually.</string>
+    <string name="update_needs_clean_flash_message">This update cannot be installed via the updater app. Make sure to take backup on external device and format the internal storage (format data) to install this zip. Please download and install the zip manually from the website.</string>
 
     <string name="export_channel_title">Export completion</string>
     <string name="new_updates_channel_title">New updates</string>
