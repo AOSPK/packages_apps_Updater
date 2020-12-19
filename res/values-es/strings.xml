@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Actualización</string>
+    <string name="app_name">Actualizador</string>
     <string name="display_name">Actualizador</string>
     <!-- Directory where the update files will be downloaded and stored.
          WARNING: The application can and will delete any unknown file. -->
@@ -114,15 +114,15 @@
     <string name="toast_already_exporting">Ya se está exportando una actualización</string>
     <plurals name="eta_seconds">
         <item quantity="one"><xliff:g id="count">%d</xliff:g> segundos restantes</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> seconds left</item>
+        <item quantity="other">Quedan <xliff:g id="COUNT">%d</xliff:g> segundos</item>
     </plurals>
     <plurals name="eta_minutes">
         <item quantity="one"><xliff:g id="count">%d</xliff:g> minutos restantes</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> minutes left</item>
+        <item quantity="other">Quedan <xliff:g id="count">%d</xliff:g> minutos</item>
     </plurals>
     <plurals name="eta_hours">
         <item quantity="one"><xliff:g id="count">%d</xliff:g> horas restantes</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> hours left</item>
+        <item quantity="other">Quedan <xliff:g id="COUNT">%d</xliff:g> horas</item>
     </plurals>
     <string name="update_on_mobile_data_title">Atención</string>
     <string name="update_on_mobile_data_message">Estas apunto de descargar un paquete usando datos móviles lo que probablemente va a causar un alto consumo de datos, desea. continuar?</string>
