@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
         <item name="colorPrimary">@color/theme_primary</item>
         <item name="colorPrimaryDark">@color/theme_primary_dark</item>
         <item name="colorAccent">@color/theme_accent</item>
-        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionModeOverlay">false</item>
         <item name="android:windowLightStatusBar">@bool/theme_is_light</item>
         <item name="android:windowLightNavigationBar">@bool/theme_is_light</item>
     </style>
@@ -30,5 +30,19 @@
         <item name="android:overlapAnchor">true</item>
         <item name="android:dropDownVerticalOffset">8dp</item>
         <item name="android:dropDownHorizontalOffset">-16dp</item>
+    </style>
+
+    <style name="AppTheme.UpdateButton" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:backgroundTint">@color/theme_accent</item>
+    </style>
+
+    <style name="AccentMaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="buttonBarPositiveButtonStyle">@style/AccentButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AccentButton</item>
+    </style>
+
+    <style name="AccentButton">
+        <item name="android:textColorPrimary">@color/theme_accent</item>
+        <item name="android:textColor">@color/theme_accent</item>
     </style>
 </resources>
