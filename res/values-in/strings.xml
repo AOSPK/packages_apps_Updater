@@ -65,20 +65,20 @@
     <string name="menu_show_changelog">Tampilkan catatan perubahan</string>
     <string name="menu_ab_perf_mode">Prioritaskan proses pembaruan</string>
     <!-- Sourceforge mirrors -->
-    <string name="sf_dialog_title">Available Mirrors</string>
+    <string name="sf_dialog_title">Mirror tersedia</string>
     <string name="menu_sf_mirrors">Cermin</string>
-    <string name="sf_mirror_preferences">Mirror preferences</string>
-    <string name="rank_and_sort_mirrors">Rank and sort the mirrors</string>
+    <string name="sf_mirror_preferences">Preferensi mirror</string>
+    <string name="rank_and_sort_mirrors">Beri peringkat dan sortir mirror</string>
     <string name="snack_updates_found">Pembaruan baru ditemukan</string>
     <string name="snack_no_updates_found">Tidak ada pembaruan baru yang ditemukan</string>
     <string name="snack_updates_check_failed">Gagal memeriksa pembaharuan. Silahkan periksa koneksi internet anda dan coba lagi nanti.</string>
-    <string name="snack_updates_server_down">Bad gateway, could not connect to server. Please try again later!</string>
-    <string name="snack_updates_download_client">Failed to initiate download client. RIP</string>
-    <string name="snack_ranking_sf_mirrors">Ranking sourceforge mirrors. Please wait!</string>
-    <string name="snack_fetching_sf_mirrors">Fetching sourceforge mirrors. Please wait!</string>
-    <string name="snack_failed_sf_mirrors">Failed to fetch sourceforge mirrors.</string>
-    <string name="snack_fetched_sf_mirrors">Fetched sourceforge mirrors. Done!</string>
-    <string name="snack_set_sf_mirror">Mirror set to %1$s!</string>
+    <string name="snack_updates_server_down">Jaringan buruk, tidak dapat terhubung ke server. Silakan coba lagi nanti!</string>
+    <string name="snack_updates_download_client">Gagal memulai klien unduhan. RIP</string>
+    <string name="snack_ranking_sf_mirrors">Memberi peringkat pada mirror sourceforge. Mohon tunggu!</string>
+    <string name="snack_fetching_sf_mirrors">Mengambil mirror sourceforge. Mohon tunggu!</string>
+    <string name="snack_failed_sf_mirrors">Gagal mengambil mirror sourceforge.</string>
+    <string name="snack_fetched_sf_mirrors">Mirror sourceforge yang diambil. Selesai!</string>
+    <string name="snack_set_sf_mirror">Mirror disetel ke %1$s!</string>
     <string name="snack_force_sf_mirror">Cermin yang dipilih sebelumnya %1$s tidak ditemukan! Mundur ke bawaan.</string>
     <string name="snack_download_failed">Unduhan gagal. Silakan periksa koneksi Internet Anda dan coba lagi nanti.</string>
     <string name="snack_download_verification_failed">Verifikasi pembaruan gagal.</string>
@@ -113,13 +113,13 @@
     <string name="notification_export_fail">Kesalahan ekspor</string>
     <string name="toast_already_exporting">Sudah mengekspor pembaruan</string>
     <plurals name="eta_seconds">
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> seconds left</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> detik tersisa</item>
     </plurals>
     <plurals name="eta_minutes">
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> minutes left</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> menit tersisa</item>
     </plurals>
     <plurals name="eta_hours">
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> hours left</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> jam tersisa</item>
     </plurals>
     <string name="update_on_mobile_data_title">Peringatan</string>
     <string name="update_on_mobile_data_message">Anda akan mengunduh paket pembaruan menggunakan data seluler yang mungkin akan menyebabkan penggunaan data yang tinggi. Apakah Anda ingin melanjutkan?</string>

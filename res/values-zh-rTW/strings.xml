@@ -81,9 +81,9 @@
     <string name="snack_set_sf_mirror">Mirror set to %1$s!</string>
     <string name="snack_force_sf_mirror">Previously selected mirror %1$s was not found! Fallback to default.</string>
     <string name="snack_download_failed">The download failed. Please check your internet connection and try again later.</string>
-    <string name="snack_download_verification_failed">The update verification failed.</string>
-    <string name="snack_download_verified">Download completed.</string>
-    <string name="snack_update_not_installable">This update can\'t be installed on top of the current build.</string>
+    <string name="snack_download_verification_failed">更新驗證失敗。</string>
+    <string name="snack_download_verified">下載已完成。</string>
+    <string name="snack_update_not_installable">此更新無法安裝在目前版本上。</string>
     <string name="header_title_text">ArrowOS\n%1$s</string>
     <string name="header_android_version">Android <xliff:g id="version" example="7.1.2">%1$s</xliff:g></string>
     <string name="header_last_updates_check">Last checked: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
@@ -93,16 +93,16 @@
     <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
     <string name="list_verifying_update">Verifying update</string>
     <string name="list_no_updates">No new updates found. To manually check for new updates, use the Refresh button.</string>
-    <string name="action_download">Download</string>
-    <string name="action_pause">Pause</string>
-    <string name="action_resume">Resume</string>
-    <string name="action_install">Install</string>
+    <string name="action_download">下載</string>
+    <string name="action_pause">暫停</string>
+    <string name="action_resume">繼續</string>
+    <string name="action_install">安裝</string>
     <string name="action_info">Info</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_cancel">Cancel</string>
-    <string name="confirm_delete_dialog_title">Delete file</string>
-    <string name="confirm_delete_dialog_message">Delete the selected update file?</string>
-    <string name="apply_update_dialog_title">Apply update</string>
+    <string name="action_delete">刪除</string>
+    <string name="action_cancel">取消</string>
+    <string name="confirm_delete_dialog_title">刪除檔案</string>
+    <string name="confirm_delete_dialog_message">刪除已選取的更新檔案？</string>
+    <string name="apply_update_dialog_title">套用更新</string>
     <string name="apply_update_dialog_message">You are about to upgrade to <xliff:g id="update_name">%1$s</xliff:g>.\n\nIf you press <xliff:g id="ok">%2$s</xliff:g>, the device will restart itself in recovery mode to install the update.\n\nNote: This feature requires a compatible Recovery or updates will need to be installed manually.</string>
     <string name="apply_update_dialog_message_ab">You are about to upgrade to <xliff:g id="update_name">%1$s</xliff:g>.\n\nIf you press <xliff:g id="ok">%2$s</xliff:g>, the device will begin installing in the background.\n\nOnce completed, you will be prompted to reboot.</string>
     <string name="cancel_installation_dialog_message">Cancel the installation?</string>

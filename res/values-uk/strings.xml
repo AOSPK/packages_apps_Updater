@@ -65,7 +65,7 @@
     <string name="menu_show_changelog">Показати журнал змін</string>
     <string name="menu_ab_perf_mode">Пріоритет процесу оновлення</string>
     <!-- Sourceforge mirrors -->
-    <string name="sf_dialog_title">Доступні дзеркала</string>
+    <string name="sf_dialog_title">Доступні альтернативні сервери</string>
     <string name="menu_sf_mirrors">Дзеркала</string>
     <string name="sf_mirror_preferences">Налаштування дзеркал</string>
     <string name="rank_and_sort_mirrors">Упорядкування та сортування дзеркал</string>
