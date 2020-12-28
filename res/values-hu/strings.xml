@@ -135,4 +135,6 @@ illetve, ha éppen tölt, akkor még <xliff:g id="percent_charging">%2$d</xliff:
     <string name="new_updates_channel_title">Új frissítések</string>
     <string name="ongoing_channel_title">Folyamatban lévő letöltések</string>
     <string name="update_failed_channel_title">Sikertelen frissítés</string>
+    <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> | <xliff:g id="variant">%2$s</xliff:g></string>
+    <string name="build_info_card_title">Current build information</string>
 </resources>

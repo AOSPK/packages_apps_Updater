@@ -134,4 +134,6 @@
     <string name="new_updates_channel_title">Νέες ενημερώσεις</string>
     <string name="ongoing_channel_title">Λήψεις σε εξέλιξη</string>
     <string name="update_failed_channel_title">Η ενημέρωση απέτυχε</string>
+    <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> | <xliff:g id="variant">%2$s</xliff:g></string>
+    <string name="build_info_card_title">Current build information</string>
 </resources>
