@@ -50,22 +50,6 @@
 
             </LinearLayout>
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scrollbars="vertical"
-                app:layout_anchor="@+id/updates_message"
-                app:layout_anchorGravity="bottom"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/theme_accent"
-                android:layout_margin="10dp"/>
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/no_updates_cardview"
                 android:layout_height="wrap_content"
@@ -153,6 +137,19 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_accent"
+                android:layout_margin="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
         </LinearLayout>
     </ScrollView>
