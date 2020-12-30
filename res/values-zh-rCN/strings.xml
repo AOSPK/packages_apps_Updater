@@ -38,7 +38,7 @@
     <string name="update_failed_notification">更新失败</string>
     <string name="installation_suspended_notification">安装已挂起</string>
     <string name="new_updates_found_title">新的更新</string>
-    <string name="text_download_speed">%1$s,%2$s/s</string>
+    <string name="text_download_speed">%1$s, %2$s/s</string>
     <string name="pause_button">暂停</string>
     <string name="resume_button">继续</string>
     <string name="suspend_button">挂起</string>
@@ -132,5 +132,5 @@
     <string name="ongoing_channel_title">当前下载</string>
     <string name="update_failed_channel_title">更新失败</string>
     <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> | <xliff:g id="variant">%2$s</xliff:g></string>
-    <string name="build_info_card_title">Current build information</string>
+    <string name="build_info_card_title">当前构建信息</string>
 </resources>
