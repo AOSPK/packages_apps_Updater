@@ -104,7 +104,7 @@
     <string name="confirm_delete_dialog_message">Διαγραφή του επιλεγμένου αρχείου ενημέρωσης;</string>
     <string name="apply_update_dialog_title">Εφαρμογή ενημέρωσης</string>
     <string name="apply_update_dialog_message">Πρόκειται να πραγματοποιήσετε αναβάθμιση σε <xliff:g id="ενημέρωση_ονομα">%1$s</xliff:g>. \n\nΑν πατήσετε <xliff:g id="ok">%2$s</xliff:g>, η συσκευή θα επανεκκινηθεί σε λειτουργία ανάκτησης για να εγκαταστήσει την ενημέρωση.\n\nΣημείωση: Αυτή η λειτουργία απαιτεί συμβατή ανάκτηση ή οι ενημερώσεις θα πρέπει να εγκατασταθούν χειροκίνητα.</string>
-    <string name="apply_update_dialog_message_ab">Πρόκειται να πραγματοποιήσετε αναβάθμιση σε <xliff:g id="ενεμερωση_ονομα">%1$s</xliff:g>.\n\nΑν πατήσετε <xliff:g id="ok">%2$s </xliff:g>, η συσκευή θα ξεκινήσει την εγκατάσταση στο παρασκήνιο.\n\n Μόλις ολοκληρωθεί, θα σας ζητηθεί να κάνετε επανεκκίνηση.</string>
+    <string name="apply_update_dialog_message_ab">Πρόκειται να πραγματοποιήσετε αναβάθμιση σε <xliff:g id="ενημερωση_ονομα">%1$s</xliff:g>.\n\nΑν πατήσετε <xliff:g id="ok">%2$s </xliff:g>, η συσκευή θα ξεκινήσει την εγκατάσταση στο παρασκήνιο.\n\n Μόλις ολοκληρωθεί, θα σας ζητηθεί να κάνετε επανεκκίνηση.</string>
     <string name="cancel_installation_dialog_message">Ματαίωση εγκατάστασης;</string>
     <string name="label_download_url">Λήψη συνδέσμου URL</string>
     <string name="toast_download_url_copied">Ο σύνδεσμος αντιγράφηκε</string>
@@ -134,6 +134,6 @@
     <string name="new_updates_channel_title">Νέες ενημερώσεις</string>
     <string name="ongoing_channel_title">Λήψεις σε εξέλιξη</string>
     <string name="update_failed_channel_title">Η ενημέρωση απέτυχε</string>
-    <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> | <xliff:g id="variant">%2$s</xliff:g></string>
-    <string name="build_info_card_title">Current build information</string>
+    <string name="arrowos_display_version">ArrowOS <xliff:g id="εκδοση">%1$s</xliff:g> | <xliff:g id="παραλλαγή">%2$s</xliff:g></string>
+    <string name="build_info_card_title">Τρέχουσες πληροφορίες κατασκευής</string>
 </resources>

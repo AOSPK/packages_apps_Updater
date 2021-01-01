@@ -28,32 +28,32 @@
           {version} - Build version
           {ziptype} - Build ziptype (vanilla/gapps)
     -->
-    <string name="verification_failed_notification">Verification failed</string>
-    <string name="verifying_download_notification">Verifying update</string>
-    <string name="downloading_notification">Downloading</string>
+    <string name="verification_failed_notification">Verifizierung fehlgeschlagen</string>
+    <string name="verifying_download_notification">Update wird verifiziert</string>
+    <string name="downloading_notification">Herunterladen</string>
     <string name="download_paused_notification">Download pausiert</string>
     <string name="download_paused_error_notification">Downloadfehler</string>
     <string name="download_completed_notification">Download abgeschlossen</string>
     <string name="download_starting_notification">Download wird gestartet</string>
     <string name="update_failed_notification">Update fehlgeschlagen</string>
-    <string name="installation_suspended_notification">Installation suspended</string>
+    <string name="installation_suspended_notification">Installation unterbrochen</string>
     <string name="new_updates_found_title">Neue Updates</string>
     <string name="text_download_speed">%1$s, %2$s/s</string>
     <string name="pause_button">Pause</string>
     <string name="resume_button">Fortsetzen</string>
-    <string name="suspend_button">Suspend</string>
-    <string name="installing_update">Installing update package</string>
+    <string name="suspend_button">Unterbrechen</string>
+    <string name="installing_update">Aktualisierung wird installiert</string>
     <string name="installing_update_error">Installationsfehler</string>
     <string name="installing_update_finished">Update installiert</string>
-    <string name="finalizing_package">Finalizing package installation</string>
-    <string name="preparing_ota_first_boot">Preparing for first boot</string>
-    <string name="dialog_prepare_zip_message">Preliminary update preparation</string>
-    <string name="dialog_battery_low_title">Low battery</string>
-    <string name="dialog_battery_low_message_pct">The battery level is too low, you need at least <xliff:g id="percent_discharging">%1$d</xliff:g>%% of the battery to continue, <xliff:g id="percent_charging">%2$d</xliff:g>%% if charging.</string>
+    <string name="finalizing_package">Die Paketinstallation wird abgeschlossen</string>
+    <string name="preparing_ota_first_boot">Vorbereitung für den ersten Start</string>
+    <string name="dialog_prepare_zip_message">Vorläufige Update-Vorbereitung</string>
+    <string name="dialog_battery_low_title">Niedriger Akkustand</string>
+    <string name="dialog_battery_low_message_pct">Der Akkustand ist zu niedrig. Es werden mindestens <xliff:g id="percent_discharging">%1$d</xliff:g>%% Restkapazität (oder <xliff:g id="percent_charging">%2$d</xliff:g>%% mit angeschlossenem Ladegerät) benötigt, um fortzufahren.</string>
     <string name="reboot">Neustart</string>
     <string name="menu_refresh">Aktualisieren</string>
     <string name="menu_preferences">Einstellungen</string>
-    <string name="menu_auto_updates_check">Auto updates check</string>
+    <string name="menu_auto_updates_check">Automatisch nach Updates suchen</string>
     <string name="menu_auto_updates_check_interval_daily">Einmal täglich</string>
     <string name="menu_auto_updates_check_interval_weekly">Einmal wöchentlich</string>
     <string name="menu_auto_updates_check_interval_monthly">Einmal monatlich</string>
@@ -63,36 +63,36 @@
     <string name="menu_copy_url">URL kopieren</string>
     <string name="menu_export_update">Update exportieren</string>
     <string name="menu_show_changelog">Changelog anzeigen</string>
-    <string name="menu_ab_perf_mode">Prioritize update process</string>
+    <string name="menu_ab_perf_mode">Updateprozess priorisieren</string>
     <!-- Sourceforge mirrors -->
     <string name="sf_dialog_title">Verfügbare Mirrors</string>
     <string name="menu_sf_mirrors">Mirrors</string>
-    <string name="sf_mirror_preferences">Mirror preferences</string>
-    <string name="rank_and_sort_mirrors">Rank and sort the mirrors</string>
-    <string name="snack_updates_found">New updates found</string>
-    <string name="snack_no_updates_found">No new updates found</string>
-    <string name="snack_updates_check_failed">The update check failed. Please check your internet connection and try again later.</string>
-    <string name="snack_updates_server_down">Bad gateway, could not connect to server. Please try again later!</string>
-    <string name="snack_updates_download_client">Failed to initiate download client. RIP</string>
-    <string name="snack_ranking_sf_mirrors">Ranking sourceforge mirrors. Please wait!</string>
-    <string name="snack_fetching_sf_mirrors">Fetching sourceforge mirrors. Please wait!</string>
-    <string name="snack_failed_sf_mirrors">Failed to fetch sourceforge mirrors.</string>
-    <string name="snack_fetched_sf_mirrors">Fetched sourceforge mirrors. Done!</string>
-    <string name="snack_set_sf_mirror">Mirror set to %1$s!</string>
-    <string name="snack_force_sf_mirror">Previously selected mirror %1$s was not found! Fallback to default.</string>
-    <string name="snack_download_failed">The download failed. Please check your internet connection and try again later.</string>
-    <string name="snack_download_verification_failed">The update verification failed.</string>
+    <string name="sf_mirror_preferences">Mirror-Einstellungen</string>
+    <string name="rank_and_sort_mirrors">Mirror einordnen und sortieren</string>
+    <string name="snack_updates_found">Aktualisierungen gefunden</string>
+    <string name="snack_no_updates_found">Keine neuen Updates gefunden</string>
+    <string name="snack_updates_check_failed">Die Suche nach Updates ist fehlgeschlagen. Bitte überprüfen Sie die Internetverbindung und versuchen es später erneut.</string>
+    <string name="snack_updates_server_down">Es konnte keine Verbindung zum Server hergestellt werden. Probieren Sie es später erneut!</string>
+    <string name="snack_updates_download_client">Fehler beim Initiieren des Download-Clients. RIP</string>
+    <string name="snack_ranking_sf_mirrors">Sourceforge wird eingeordnet. Bitte warten!</string>
+    <string name="snack_fetching_sf_mirrors">Sourceforge-Mirror werden abgerufen! Bitte warten!</string>
+    <string name="snack_failed_sf_mirrors">Fehler beim Abrufen von Sourceforge-Mirror.</string>
+    <string name="snack_fetched_sf_mirrors">Sourceforge-Mirrror abgerufen. Fertig!</string>
+    <string name="snack_set_sf_mirror">Mirror auf %1$s gesetzt!</string>
+    <string name="snack_force_sf_mirror">Zuletzt ausgewählter Mirror %1$s wurde nicht gefunden! Zurückfallen auf Standardeinstellung.</string>
+    <string name="snack_download_failed">Das Herunterladen ist fehlgeschlagen. Bitte überpüfen sie die Internetverbindung und versuchen Sie es später erneut.</string>
+    <string name="snack_download_verification_failed">Die Überprüfung der Aktualisierung ist fehlgeschlagen.</string>
     <string name="snack_download_verified">Download abgeschlossen.</string>
-    <string name="snack_update_not_installable">This update can\'t be installed on top of the current build.</string>
+    <string name="snack_update_not_installable">Diese Aktualisierung kann nicht auf die bestehende Installation angewendet werden.</string>
     <string name="header_title_text">ArrowOS\n%1$s</string>
     <string name="header_android_version">Android <xliff:g id="version" example="7.1.2">%1$s</xliff:g></string>
-    <string name="header_last_updates_check">Last checked: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
+    <string name="header_last_updates_check">Letzte Überprüfung: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
     <string name="list_build_version">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
     <string name="list_build_version_date">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> von <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
     <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> von <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
-    <string name="list_verifying_update">Verifying update</string>
-    <string name="list_no_updates">No new updates found. To manually check for new updates, use the Refresh button.</string>
+    <string name="list_verifying_update">Update wird verifiziert</string>
+    <string name="list_no_updates">Keine neuen Updates gefunden. Um manuell nach neuen Updates zu suchen, verwenden Sie die \"Aktualisieren\" Taste.</string>
     <string name="action_download">Download</string>
     <string name="action_pause">Pause</string>
     <string name="action_resume">Fortsetzen</string>
@@ -101,14 +101,14 @@
     <string name="action_delete">Löschen</string>
     <string name="action_cancel">Abbrechen</string>
     <string name="confirm_delete_dialog_title">Datei löschen</string>
-    <string name="confirm_delete_dialog_message">Delete the selected update file?</string>
+    <string name="confirm_delete_dialog_message">Soll die ausgewählte Update-Datei gelöscht werden?</string>
     <string name="apply_update_dialog_title">Update installieren</string>
-    <string name="apply_update_dialog_message">You are about to upgrade to <xliff:g id="update_name">%1$s</xliff:g>.\n\nIf you press <xliff:g id="ok">%2$s</xliff:g>, the device will restart itself in recovery mode to install the update.\n\nNote: This feature requires a compatible Recovery or updates will need to be installed manually.</string>
-    <string name="apply_update_dialog_message_ab">You are about to upgrade to <xliff:g id="update_name">%1$s</xliff:g>.\n\nIf you press <xliff:g id="ok">%2$s</xliff:g>, the device will begin installing in the background.\n\nOnce completed, you will be prompted to reboot.</string>
+    <string name="apply_update_dialog_message">Bereit zum Update auf <xliff:g id="update_name">%1$s</xliff:g>\n\nWenn Sie <xliff:g id="ok">%2$s</xliff:g> drücken, wird das Gerät im Recovery-Modus gestartet, um das Update durchzuführen.\n\nHinweis: Diese Funktion erfordert ein kompatibles Recovery-System, anderenfalls muss das Update manuell installiert werden.</string>
+    <string name="apply_update_dialog_message_ab">Sie sind dabei, auf <xliff:g id="update_name">%1$s</xliff:g> zu aktualisieren.\n\nWenn Sie auf <xliff:g id="ok">%2$s</xliff:g> drücken, wird das Gerät die Aktualisierung im Hintergrund installieren.\n\nSobald dies abgeschlossen ist, werden Sie aufgefordert, neu zu starten.</string>
     <string name="cancel_installation_dialog_message">Installation abbrechen?</string>
     <string name="label_download_url">Download URL</string>
     <string name="toast_download_url_copied">URL kopiert</string>
-    <string name="dialog_export_title">Exporting update</string>
+    <string name="dialog_export_title">Update wird exportiert</string>
     <string name="notification_export_success">Update exportiert</string>
     <string name="notification_export_fail">Exportfehler</string>
     <string name="toast_already_exporting">Es wird bereits ein Update exportiert</string>
@@ -125,15 +125,15 @@
         <item quantity="other"><xliff:g id="count">%d</xliff:g> Stunden verbleibend</item>
     </plurals>
     <string name="update_on_mobile_data_title">Warnung</string>
-    <string name="update_on_mobile_data_message">You\'re about to download an update package using mobile data which is likely going to cause high data usage. Would you like to proceed?</string>
+    <string name="update_on_mobile_data_message">Sie sind dabei ein Software-Update über das Mobilfunknetz herunterzuladen, was zu einem hohen Datenverbrauch führen kann. Möchten Sie fortfahren?</string>
     <string name="checkbox_mobile_data_warning">Nicht erneut anzeigen</string>
-    <string name="menu_mobile_data_warning">Mobile data warning</string>
+    <string name="menu_mobile_data_warning">Mobile Daten Warnung</string>
     <string name="blocked_update_dialog_title">Update blockiert</string>
-    <string name="blocked_update_dialog_message">This update cannot be installed using the updater app. You may need a factory reset (wipes all data) to install this zip. Please download and install the zip manually. </string>
-    <string name="export_channel_title">Export completion</string>
+    <string name="blocked_update_dialog_message">Dieses Update kann nicht mit der Updater-App installiert werden. Sie müssen möglicherweise auf Werkseinstellungen (löscht alle Daten) zurücksetzen, um diese Zip-Datei zu installieren. Bitte laden Sie die Zip-Datei manuell herunter und installieren Sie diese.</string>
+    <string name="export_channel_title">Export abgeschlossen</string>
     <string name="new_updates_channel_title">Neue Updates</string>
-    <string name="ongoing_channel_title">Ongoing downloads</string>
+    <string name="ongoing_channel_title">Laufende Downloads</string>
     <string name="update_failed_channel_title">Update fehlgeschlagen</string>
-    <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> | <xliff:g id="variant">%2$s</xliff:g></string>
-    <string name="build_info_card_title">Current build information</string>
+    <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> - <xliff:g id="variant">%2$s</xliff:g></string>
+    <string name="build_info_card_title">Aktuelle Build-Informationen</string>
 </resources>
