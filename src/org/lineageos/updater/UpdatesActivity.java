@@ -376,6 +376,7 @@ public class UpdatesActivity extends UpdatesListActivity {
     @Override
     public void showSnackbar(int stringId, int duration) {
         Snackbar snackbar = Snackbar.make(findViewById(R.id.toolbar), stringId, duration);
+        snackbar.setAnchorView(R.id.refresh);
         snackbar.show();
     }
 

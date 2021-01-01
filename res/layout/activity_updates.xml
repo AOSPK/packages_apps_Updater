@@ -162,8 +162,7 @@
         android:contentDescription="@string/menu_refresh"
         android:src="@drawable/ic_menu_refresh"
         app:backgroundTint="@color/theme_accent"
-        app:layout_anchor="@id/toolbar"
-        app:layout_behavior="org.lineageos.updater.ui.FloatingActionButtonBehavior" />
+        app:layout_anchor="@id/toolbar" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/toolbar"
