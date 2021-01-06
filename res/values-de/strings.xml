@@ -71,12 +71,12 @@
     <string name="rank_and_sort_mirrors">Mirror einordnen und sortieren</string>
     <string name="snack_updates_found">Aktualisierungen gefunden</string>
     <string name="snack_no_updates_found">Keine neuen Updates gefunden</string>
-    <string name="snack_updates_check_failed">Die Suche nach Updates ist fehlgeschlagen. Bitte überprüfen Sie die Internetverbindung und versuchen es später erneut.</string>
+    <string name="snack_updates_check_failed">Die Suche nach Updates ist fehlgeschlagen. Bitte überprüfen Sie die Internetverbindung und versuchen Sie es später erneut.</string>
     <string name="snack_updates_server_down">Es konnte keine Verbindung zum Server hergestellt werden. Probieren Sie es später erneut!</string>
     <string name="snack_updates_download_client">Fehler beim Initiieren des Download-Clients. RIP</string>
     <string name="snack_ranking_sf_mirrors">Sourceforge wird eingeordnet. Bitte warten!</string>
     <string name="snack_fetching_sf_mirrors">Sourceforge-Mirror werden abgerufen! Bitte warten!</string>
-    <string name="snack_failed_sf_mirrors">Fehler beim Abrufen von Sourceforge-Mirror.</string>
+    <string name="snack_failed_sf_mirrors">Fehler beim Abrufen des Sourceforge-Mirrors.</string>
     <string name="snack_fetched_sf_mirrors">Sourceforge-Mirrror abgerufen. Fertig!</string>
     <string name="snack_set_sf_mirror">Mirror auf %1$s gesetzt!</string>
     <string name="snack_force_sf_mirror">Zuletzt ausgewählter Mirror %1$s wurde nicht gefunden! Zurückfallen auf Standardeinstellung.</string>

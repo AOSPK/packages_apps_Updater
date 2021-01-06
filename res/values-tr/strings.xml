@@ -34,18 +34,18 @@
     <string name="download_paused_notification">İndirme duraklatıldı</string>
     <string name="download_paused_error_notification">İndirme hatası</string>
     <string name="download_completed_notification">İndirme tamamlandı</string>
-    <string name="download_starting_notification">İndirmeye başlıyor</string>
+    <string name="download_starting_notification">İndirme başlatılıyor</string>
     <string name="update_failed_notification">Güncelleme başarısız oldu</string>
     <string name="installation_suspended_notification">Kurulum askıya alındı</string>
     <string name="new_updates_found_title">Yeni güncellemeler</string>
     <string name="text_download_speed">%1$s, %2$s/sn</string>
     <string name="pause_button">Duraklat</string>
     <string name="resume_button">Devam et</string>
-    <string name="suspend_button">Askıya Al</string>
+    <string name="suspend_button">Askıya al</string>
     <string name="installing_update">Güncelleme paketi yükleniyor</string>
     <string name="installing_update_error">Yükleme hatası</string>
     <string name="installing_update_finished">Güncelleme yüklendi</string>
-    <string name="finalizing_package">Paket yükleme tamamlanıyor</string>
+    <string name="finalizing_package">Paket yüklenimi tamamlanıyor</string>
     <string name="preparing_ota_first_boot">Ön yükleme için hazırlanıyor</string>
     <string name="dialog_prepare_zip_message">Güncelleme ön hazırlığı</string>
     <string name="dialog_battery_low_title">Düşük pil</string>
@@ -65,15 +65,15 @@
     <string name="menu_show_changelog">Değişiklikleri göster</string>
     <string name="menu_ab_perf_mode">Güncelleme işlemine öncelik ver</string>
     <!-- Sourceforge mirrors -->
-    <string name="sf_dialog_title">Mevcut Alternatifler</string>
-    <string name="menu_sf_mirrors">Alternatif</string>
+    <string name="sf_dialog_title">Mevcut alternatifler</string>
+    <string name="menu_sf_mirrors">Alternatifler</string>
     <string name="sf_mirror_preferences">Alternatif tercihleri</string>
     <string name="rank_and_sort_mirrors">Alternatifleri çeşitleyin ve sıralayın</string>
     <string name="snack_updates_found">Yeni güncellemeler bulundu</string>
-    <string name="snack_no_updates_found">Yeni güncelleme yok</string>
+    <string name="snack_no_updates_found">Yeni güncellemeler bulunamadı</string>
     <string name="snack_updates_check_failed">Güncelleme kontrolü başarısız oldu. Lütfen internet bağlantınızı kontrol edin ve daha sonra tekrar deneyin.</string>
     <string name="snack_updates_server_down">Üzgünüz, sunucuya bağlanılamadı. Lütfen daha sonra tekrar dene!</string>
-    <string name="snack_updates_download_client">İndirme istemcisi başlatılamadı. HUZUR İÇİNDE YATSIN</string>
+    <string name="snack_updates_download_client">İndirme istemcisi başlatılamadı. RIP</string>
     <string name="snack_ranking_sf_mirrors">Sourceforge alternatifleri sıralanıyor. Lütfen bekleyin!</string>
     <string name="snack_fetching_sf_mirrors">Sourceforge alternatifleri getiriliyor. Lütfen bekleyin!</string>
     <string name="snack_failed_sf_mirrors">Sourceforge alternatifleri getirilemedi.</string>
@@ -99,7 +99,7 @@
     <string name="action_install">Yükle</string>
     <string name="action_info">Bilgi</string>
     <string name="action_delete">Sil</string>
-    <string name="action_cancel">Vazgeç</string>
+    <string name="action_cancel">İptal</string>
     <string name="confirm_delete_dialog_title">Dosyayı sil</string>
     <string name="confirm_delete_dialog_message">Seçilen güncelleme dosyası silinsin mi?</string>
     <string name="apply_update_dialog_title">Güncellemeyi uygula</string>
@@ -135,5 +135,5 @@
     <string name="ongoing_channel_title">Devam eden indirmeler</string>
     <string name="update_failed_channel_title">Güncelleme başarısız oldu</string>
     <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> | <xliff:g id="variant">%2$s</xliff:g></string>
-    <string name="build_info_card_title">Current build information</string>
+    <string name="build_info_card_title">Mevcut yapı bilgileri</string>
 </resources>
