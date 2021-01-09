@@ -84,7 +84,7 @@ public class UpdatesActivity extends UpdatesListActivity {
     private TextView mCurrentBuildDate;
     private TextView mDeviceInfo;
 
-    private static Map<String, String> sf_mirrors;
+    private static Map<String, String> mirrors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -195,8 +195,8 @@ public class UpdatesActivity extends UpdatesListActivity {
                 startActivity(openUrl);
                 return true;
             }
-            case R.id.menu_sf_mirrors: {
-                showSfMirrorPreferencesDialog();
+            case R.id.menu_mirrors: {
+                showMirrorPreferencesDialog();
                 return true;
             }
         }
@@ -382,6 +382,7 @@ public class UpdatesActivity extends UpdatesListActivity {
 
     public void showSnackbarString(String string, int duration) {
         Snackbar snackbar = Snackbar.make(findViewById(R.id.toolbar), string, duration);
+        snackbar.setAnchorView(R.id.refresh);
         snackbar.show();
     }
 
@@ -433,57 +434,57 @@ public class UpdatesActivity extends UpdatesListActivity {
                 .show();
     }
 
-    public static void prepareSfMirrorsData (UpdateInfo updateInfo, UpdatesActivity mUpdatesActivity) {
+    public static void prepareMirrorsData (UpdateInfo updateInfo, UpdatesActivity mUpdatesActivity) {
 
         new AsyncTask<UpdateInfo, Void, Map<String, String>>() {
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
 
-                if (Utils.getSfRankSortSetting(mUpdatesActivity))
-                    mUpdatesActivity.showSnackbar(R.string.snack_ranking_sf_mirrors, Snackbar.LENGTH_INDEFINITE);
+                if (Utils.getRankSortSetting(mUpdatesActivity))
+                    mUpdatesActivity.showSnackbar(R.string.snack_ranking_mirrors, Snackbar.LENGTH_INDEFINITE);
                 else
-                    mUpdatesActivity.showSnackbar(R.string.snack_fetching_sf_mirrors, Snackbar.LENGTH_INDEFINITE);
+                    mUpdatesActivity.showSnackbar(R.string.snack_fetching_mirrors, Snackbar.LENGTH_INDEFINITE);
             }
 
             @Override
             protected Map<String, String> doInBackground(UpdateInfo... update) {
 
-                Boolean sfRankSort = Utils.getSfRankSortSetting(mUpdatesActivity);
-                sf_mirrors = new LinkedHashMap<>();
+                Boolean rankSort = Utils.getRankSortSetting(mUpdatesActivity);
+                mirrors = new LinkedHashMap<>();
 
                 try {
-                    Thread mirrorsData = new Thread(() -> sf_mirrors = UpdaterController.sourceforgeMirrors(update[0], sfRankSort));
+                    Thread mirrorsData = new Thread(() -> mirrors = UpdaterController.arrowMirrors(update[0], rankSort));
                     mirrorsData.start();
                     mirrorsData.join();
                 } catch (InterruptedException e) {
                     Log.d(TAG, "Mirrors data thread interrupted");
                 }
 
-                return sf_mirrors;
+                return mirrors;
             }
 
             @Override
-            protected void onPostExecute(Map<String, String> sf_mirrors) {
-                super.onPostExecute(sf_mirrors);
+            protected void onPostExecute(Map<String, String> mirrors) {
+                super.onPostExecute(mirrors);
 
-                if (!sf_mirrors.isEmpty()) {
-                    mUpdatesActivity.showSnackbar(R.string.snack_fetched_sf_mirrors, Snackbar.LENGTH_SHORT);
-                    showSfMirrorsDialog(sf_mirrors, mUpdatesActivity, updateInfo);
+                if (!mirrors.isEmpty()) {
+                    mUpdatesActivity.showSnackbar(R.string.snack_fetched_mirrors, Snackbar.LENGTH_SHORT);
+                    showMirrorsDialog(mirrors, mUpdatesActivity, updateInfo);
                 } else {
-                    mUpdatesActivity.showSnackbar(R.string.snack_failed_sf_mirrors, Snackbar.LENGTH_LONG);
+                    mUpdatesActivity.showSnackbar(R.string.snack_failed_mirrors, Snackbar.LENGTH_LONG);
                 }
             }
         }.execute(updateInfo);
     }
 
-    private static void showSfMirrorsDialog(Map<String, String> sf_mirrors, UpdatesActivity mUpdatesActivity, UpdateInfo updateInfo) {
+    private static void showMirrorsDialog(Map<String, String> mirrorsList, UpdatesActivity mUpdatesActivity, UpdateInfo updateInfo) {
         final MirrorsDbHelper mirrorsDbHelper = MirrorsDbHelper.getInstance(mUpdatesActivity);
-        String[] mirrors = sf_mirrors.keySet().toArray(new String[0]);
+        String[] mirrors = mirrorsList.keySet().toArray(new String[0]);
         String[] mirrors_pings = new String[mirrors.length];
         String downloadId = updateInfo.getDownloadId();
         String prevMirrorName = mirrorsDbHelper.getMirrorName(updateInfo.getDownloadId());
-        Boolean isRankSort = Utils.getSfRankSortSetting(mUpdatesActivity);
+        Boolean isRankSort = Utils.getRankSortSetting(mUpdatesActivity);
         int setMirrorPos = 0;
 
         for (int i=0; i<mirrors.length; i++) {
@@ -496,7 +497,7 @@ public class UpdatesActivity extends UpdatesListActivity {
         // If failed to find the previous mirror force set to the first available one
         if (setMirrorPos == 0) {
             mirrorsDbHelper.setMirrorName(mirrors[0], downloadId);
-            UpdaterController.setSfMirror(updateInfo, mUpdatesActivity, mirrors[0]);
+            UpdaterController.setMirror(updateInfo, mUpdatesActivity, mirrors[0]);
             mAdapter.notifyItemChanged(downloadId);
         }
 
@@ -513,7 +514,7 @@ public class UpdatesActivity extends UpdatesListActivity {
                 .setSingleChoiceItems((isRankSort) ? mirrors_pings : mirrors, setMirrorPos, (dialogInterface, i) -> {
 
                     mirrorsDbHelper.setMirrorName(mirrors[i], downloadId);
-                    UpdaterController.setSfMirror(updateInfo, mUpdatesActivity, mirrors[i]);
+                    UpdaterController.setMirror(updateInfo, mUpdatesActivity, mirrors[i]);
                     mAdapter.notifyItemChanged(downloadId);
 
                     Log.d(TAG, "Selected Mirror!" + mirrors[i]);
@@ -522,18 +523,18 @@ public class UpdatesActivity extends UpdatesListActivity {
                 .show();
     }
 
-    private void showSfMirrorPreferencesDialog () {
+    private void showMirrorPreferencesDialog () {
         View view = LayoutInflater.from(this).inflate(R.layout.sf_mirror_preferences, null);
-        Switch sf_rank_sort = view.findViewById(R.id.rank_and_sort_mirrors);
+        Switch rank_sort = view.findViewById(R.id.rank_and_sort_mirrors);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        sf_rank_sort.setChecked(prefs.getBoolean(Constants.PREF_SF_RANK_SORT, false));
+        rank_sort.setChecked(prefs.getBoolean(Constants.PREF_RANK_SORT, false));
 
         new AlertDialog.Builder(this)
                 .setTitle(R.string.sf_mirror_preferences)
                 .setView(view)
                 .setOnDismissListener(dialogInterface -> prefs.edit()
-                        .putBoolean(Constants.PREF_SF_RANK_SORT, sf_rank_sort.isChecked())
+                        .putBoolean(Constants.PREF_RANK_SORT, rank_sort.isChecked())
                         .apply())
                 .show();
     }

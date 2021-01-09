@@ -524,6 +524,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         menu.findItem(R.id.menu_copy_url).setVisible(update.getAvailableOnline());
         menu.findItem(R.id.menu_export_update).setVisible(
                 update.getPersistentStatus() == UpdateStatus.Persistent.VERIFIED);
+        menu.findItem(R.id.menu_mirrors).setVisible(update.getAvailableOnline());
 
         popupMenu.setOnMenuItemClickListener(item -> {
             switch (item.getItemId()) {
@@ -544,8 +545,8 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
                         exportUpdate(update);
                     }
                     return true;
-                case R.id.menu_sf_mirrors:
-                    UpdatesActivity.prepareSfMirrorsData(update, mUpdatesActivity);
+                case R.id.menu_mirrors:
+                    UpdatesActivity.prepareMirrorsData(update, mUpdatesActivity);
                     return true;
             }
             return false;

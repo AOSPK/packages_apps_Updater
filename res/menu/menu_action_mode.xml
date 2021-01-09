@@ -11,6 +11,6 @@
         android:id="@+id/menu_copy_url"
         android:title="@string/menu_copy_url" />
     <item
-        android:id="@+id/menu_sf_mirrors"
+        android:id="@+id/menu_mirrors"
         android:title="@string/menu_sf_mirrors" />
 </menu>

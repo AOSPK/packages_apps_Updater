@@ -89,7 +89,7 @@ public class UpdaterController {
     // Sourceforge variable instances
     private static Map<String, String> mirror_links;
     private static Map<Double, String> ranked_mirrors;
-    private static Map<String, String> sorted_sf_mirrors;
+    private static Map<String, String> sorted_mirrors;
     public static Map<Double, String> sorted_ranked_mirrors;
 
     public static synchronized UpdaterController getInstance() {
@@ -390,16 +390,16 @@ public class UpdaterController {
         return true;
     }
 
-    public static void setSfMirror(UpdateInfo updateInfo, UpdatesActivity updatesActivity, String mirror) {
+    public static void setMirror(UpdateInfo updateInfo, UpdatesActivity updatesActivity, String mirror) {
         if (mDownloads.containsKey(updateInfo.getDownloadId())) {
             Update updateAdded = mDownloads.get(updateInfo.getDownloadId()).mUpdate;
-            // Set default url sent by server if failed to get sf mirror
+            // Set default url sent by server if failed to get mirror
             String mirrorUrl = updateInfo.getDownloadUrl();
-            String mirrorSnack = updatesActivity.getString(R.string.snack_set_sf_mirror, mirror);
+            String mirrorSnack = updatesActivity.getString(R.string.snack_set_mirror, mirror);
 
-            if (Utils.getSfRankSortSetting(updatesActivity)) {
-                if (!sorted_sf_mirrors.isEmpty()) {
-                    for (Map.Entry<String, String> sortedMirrors : sorted_sf_mirrors.entrySet()) {
+            if (Utils.getRankSortSetting(updatesActivity)) {
+                if (!sorted_mirrors.isEmpty()) {
+                    for (Map.Entry<String, String> sortedMirrors : sorted_mirrors.entrySet()) {
                         if (mirror.equals(sortedMirrors.getKey())) {
                             mirrorUrl = sortedMirrors.getValue();
                             updatesActivity.showSnackbarString(mirrorSnack, Snackbar.LENGTH_SHORT);
@@ -410,11 +410,11 @@ public class UpdaterController {
                 }
             } else {
                 if (!mirror_links.isEmpty()) {
-                    for (Map.Entry<String, String> sfMirrors : mirror_links.entrySet()) {
-                        if (mirror.equals(sfMirrors.getKey())) {
-                            mirrorUrl = sfMirrors.getValue();
+                    for (Map.Entry<String, String> mirrors : mirror_links.entrySet()) {
+                        if (mirror.equals(mirrors.getKey())) {
+                            mirrorUrl = mirrors.getValue();
                             updatesActivity.showSnackbarString(mirrorSnack, Snackbar.LENGTH_SHORT);
-                            mirrorsDbHelper.setMirrorUrl(sfMirrors.getValue(), updateInfo.getDownloadId());
+                            mirrorsDbHelper.setMirrorUrl(mirrors.getValue(), updateInfo.getDownloadId());
                             break;
                         }
                     }
@@ -431,12 +431,12 @@ public class UpdaterController {
         for (Map.Entry<Double, String> rank_links : sorted_ranked_mirrors.entrySet()) {
             for (Map.Entry<String, String> mirror_links : mirror_links.entrySet()) {
                 if (rank_links.getValue().equals(mirror_links.getKey())) {
-                    sorted_sf_mirrors.put(rank_links.getValue(), mirror_links.getValue());
+                    sorted_mirrors.put(rank_links.getValue(), mirror_links.getValue());
                     Log.d(TAG, "sorted mirrors list: " + rank_links.getValue());
                 }
             }
         }
-        return sorted_sf_mirrors;
+        return sorted_mirrors;
     }
 
     private static Map<String, String> cookRankMirrorsData(Map<String, String> rank_links) {
@@ -485,69 +485,93 @@ public class UpdaterController {
                                                                              pingOutput.lastIndexOf("ms")));
                         if (pingResult != 0)
                             ranked_mirrors.put(pingResult, rank_name);
-                        Log.d(TAG, "mdev of sourceforge mirror " + rank_name + " " + pingResult);
+                        Log.d(TAG, "mdev of mirror " + rank_name + " " + pingResult);
                     }
                     pingOutput = in.readLine();
                 }
                 in.close();
             } catch (IOException e) {
-                Log.d(TAG, "Failed to rank sourceforge mirror " + rank_name, e);
+                Log.d(TAG, "Failed to rank mirror " + rank_name, e);
             }
         }
     }
 
-    public static Map<String, String> sourceforgeMirrors(UpdateInfo update, Boolean sfRankSort) {
+    public static Map<String, String> arrowMirrors(UpdateInfo update, Boolean rankSort) {
+        int mirrorCount = 1;
+        String mirrorLink;
         mirror_links = new LinkedHashMap<>();
         ranked_mirrors = new LinkedHashMap<>();
-        sorted_sf_mirrors = new LinkedHashMap<>();
+        sorted_mirrors = new LinkedHashMap<>();
         Map<String, String> rank_links = new LinkedHashMap<>();
-        String projectname = Constants.SF_PROJECT_NAME;
-        String project_root_path = Constants.SF_PROJECT_ROOT_PATH_NAME + update.getVersion().split("v", 2)[1];
-        String current_device = SystemProperties.get(Constants.PROP_DEVICE);
-        String device_file = update.getName();
-        String filepath = "/" + project_root_path + "/" + current_device + "/" + device_file;
-        String mirrorsUrl = "https://sourceforge.net/settings/mirror_choices?projectname=" + projectname + "&filename=" + filepath;
-        Log.d(TAG, "mirrors URL: " + mirrorsUrl);
+        String defaultMirrorUrl = update.getDownloadUrl();
 
-        Thread mirrorFetch = new Thread(() -> {
-        try {
-            Document doc = Jsoup.connect(mirrorsUrl).get();
-            Elements links = doc.select("#mirrorList li");
-
-            for (Element link : links) {
-                String mirrorName = link.attr("id");
-                String mirrorPlace = link.text();
-                if (!mirrorName.equals("autoselect")) {
-                    mirrorPlace = mirrorPlace.substring(mirrorPlace.lastIndexOf("(") + 1,
-                                                        mirrorPlace.lastIndexOf(")"))
-                                                        .split(",", 2)[0]
-                                                        .trim();
-                    mirror_links.put(mirrorPlace, "https://" + mirrorName + ".dl.sourceforge.net/project/" + projectname + filepath);
-                    rank_links.put(mirrorPlace, mirrorName + ".dl.sourceforge.net");
-                    Log.d(TAG, "mirror: " + mirrorName + " country name: " + mirrorPlace);
-                }
-            }
-
-        } catch (IOException e) {
-            Log.d(TAG, "Failed to fetch sourceforge mirrors!", e);
+        for (String mirror:
+             Constants.arrowMirrors) {
+            mirrorLink = defaultMirrorUrl.replaceFirst("mirror[0-9]", "mirror" + mirrorCount);
+            mirror_links.put(mirror, mirrorLink);
+            rank_links.put(mirror, mirrorLink.split("https://")[1].split("/download")[0]);
+            mirrorCount++;
         }
-        });
 
-        try {
-            mirrorFetch.start();
-            mirrorFetch.join();
-
-            if (sfRankSort) {
-                return cookRankMirrorsData(rank_links);
-            } else {
-                return mirror_links;
-            }
-
-        } catch (InterruptedException e) {
-            Log.d(TAG, "Mirror fetch thread interrupted!", e);
-            return null;
+        if (rankSort) {
+            return cookRankMirrorsData(rank_links);
+        } else {
+            return mirror_links;
         }
     }
+
+//    public static Map<String, String> sourceforgeMirrors(UpdateInfo update, Boolean rankSort) {
+//        mirror_links = new LinkedHashMap<>();
+//        ranked_mirrors = new LinkedHashMap<>();
+//        sorted_mirrors = new LinkedHashMap<>();
+//        Map<String, String> rank_links = new LinkedHashMap<>();
+//        String projectname = Constants.SF_PROJECT_NAME;
+//        String project_root_path = Constants.SF_PROJECT_ROOT_PATH_NAME + update.getVersion().split("v", 2)[1];
+//        String current_device = SystemProperties.get(Constants.PROP_DEVICE);
+//        String device_file = update.getName();
+//        String filepath = "/" + project_root_path + "/" + current_device + "/" + device_file;
+//        String mirrorsUrl = "https://sourceforge.net/settings/mirror_choices?projectname=" + projectname + "&filename=" + filepath;
+//        Log.d(TAG, "mirrors URL: " + mirrorsUrl);
+//
+//        Thread mirrorFetch = new Thread(() -> {
+//        try {
+//            Document doc = Jsoup.connect(mirrorsUrl).get();
+//            Elements links = doc.select("#mirrorList li");
+//
+//            for (Element link : links) {
+//                String mirrorName = link.attr("id");
+//                String mirrorPlace = link.text();
+//                if (!mirrorName.equals("autoselect")) {
+//                    mirrorPlace = mirrorPlace.substring(mirrorPlace.lastIndexOf("(") + 1,
+//                                                        mirrorPlace.lastIndexOf(")"))
+//                                                        .split(",", 2)[0]
+//                                                        .trim();
+//                    mirror_links.put(mirrorPlace, "https://" + mirrorName + ".dl.sourceforge.net/project/" + projectname + filepath);
+//                    rank_links.put(mirrorPlace, mirrorName + ".dl.sourceforge.net");
+//                    Log.d(TAG, "mirror: " + mirrorName + " country name: " + mirrorPlace);
+//                }
+//            }
+//
+//        } catch (IOException e) {
+//            Log.d(TAG, "Failed to fetch sourceforge mirrors!", e);
+//        }
+//        });
+//
+//        try {
+//            mirrorFetch.start();
+//            mirrorFetch.join();
+//
+//            if (rankSort) {
+//                return cookRankMirrorsData(rank_links);
+//            } else {
+//                return mirror_links;
+//            }
+//
+//        } catch (InterruptedException e) {
+//            Log.d(TAG, "Mirror fetch thread interrupted!", e);
+//            return null;
+//        }
+//    }
 
     public boolean startDownload(String downloadId) {
         Log.d(TAG, "Starting " + downloadId);
