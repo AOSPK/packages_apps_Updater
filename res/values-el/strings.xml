@@ -74,12 +74,12 @@
     <string name="snack_updates_check_failed">Ο έλεγχος για ενημερώσεις απέτυχε. Παρακαλώ ελέγξτε την σύνδεσή σας στο διαδίκτυο και προσπαθήστε αργότερα.</string>
     <string name="snack_updates_server_down">Κακή πύλη, δεν ήταν δυνατή η σύνδεση στο διακομιστή. Παρακαλώ προσπαθήστε ξανά αργότερα!</string>
     <string name="snack_updates_download_client">Αποτυχία εκκίνησης προγράμματος-πελάτη λήψης. ΞΗΛΩΜΑ</string>
-    <string name="snack_ranking_mirrors">Ranking mirrors. Please wait!</string>
-    <string name="snack_fetching_mirrors">Fetching mirrors. Please wait!</string>
-    <string name="snack_failed_mirrors">Failed to fetch mirrors.</string>
-    <string name="snack_fetched_mirrors">Fetched mirrors. Done!</string>
-    <string name="snack_set_mirror">Mirror set to %1$s!</string>
-    <string name="snack_force_mirror">Previously selected mirror %1$s was not found! Fallback to default.</string>
+    <string name="snack_ranking_mirrors">Καθρέφτες κατάταξης. Παρακαλώ περιμένετε!</string>
+    <string name="snack_fetching_mirrors">Λήψη καθρεφτών. Παρακαλώ περιμένετε!</string>
+    <string name="snack_failed_mirrors">Αποτυχία ανάκτησης καθρεφτών.</string>
+    <string name="snack_fetched_mirrors">Ανακτήθηκαν καθρέφτες. Εγινε!</string>
+    <string name="snack_set_mirror">Ο καθρέφτης ορίστηκε σε%1$s!</string>
+    <string name="snack_force_mirror">Δεν βρέθηκε καθρέφτης%1$s που επιλέχθηκε προηγουμένως! Επιστροφή στην προεπιλογή.</string>
     <string name="snack_download_failed">Η λήψη απέτυχε. Παρακαλούμε ελέγξτε την σύνδεση σας στο διαδίκτυο και προσπαθήστε αργότερα.</string>
     <string name="snack_download_verification_failed">Αποτυχία επαλήθευσης ενημέρωσης.</string>
     <string name="snack_download_verified">Η λήψη ολοκληρώθηκε.</string>
@@ -113,7 +113,7 @@
     <string name="notification_export_fail">Σφάλμα εξαγωγής</string>
     <string name="toast_already_exporting">Εξάγεται ήδη μία ενημέρωση</string>
     <plurals name="eta_seconds">
-        <item quantity="one">1 second left</item>
+        <item quantity="one">1 δευτερόλεπτο απομένει</item>
         <item quantity="other"><xliff:g id="μέτρηση">%d</xliff:g> δευτερόλεπτα απέμειναν</item>
     </plurals>
     <plurals name="eta_minutes">
@@ -121,7 +121,7 @@
         <item quantity="other"><xliff:g id="μετρηση">%d</xliff:g> λεπτά απέμειναν</item>
     </plurals>
     <plurals name="eta_hours">
-        <item quantity="one">1 hour left</item>
+        <item quantity="one">Απομένει 1 ώρα</item>
         <item quantity="other"><xliff:g id="μετρηση">%d</xliff:g> ώρες απέμειναν</item>
     </plurals>
     <string name="update_on_mobile_data_title">Προειδοποίηση</string>
@@ -129,8 +129,8 @@
     <string name="checkbox_mobile_data_warning">Να μην εμφανιστεί ξανά</string>
     <string name="menu_mobile_data_warning">Προειδοποίηση χρήσης δεδομένων κινητής τηλεφωνίας</string>
     <string name="blocked_update_dialog_title">Η ενημέρωση μπλοκαρίστηκε</string>
-    <string name="blocked_update_dialog_message">This update cannot be installed using the updater app. You may need a factory reset (wipes all data) to install this zip. Please download and install the zip manually.</string>
-    <string name="update_needs_clean_flash_message">This update cannot be installed via the updater app. Make sure to take backup on external device and format the internal storage (format data) to install this zip. Please download and install the zip manually from the website.</string>
+    <string name="blocked_update_dialog_message">Αυτή η ενημέρωση δεν μπορεί να εγκατασταθεί χρησιμοποιώντας την εφαρμογή ενημέρωσης. Μπορεί να χρειαστεί επαναφορά εργοστασιακών ρυθμίσεων (σκουπίζει όλα τα δεδομένα) για να εγκαταστήσετε αυτό το συμπιεσμένο αρχείο. Κάντε λήψη και εγκαταστήστε το συμπιεσμένο αρχείο χειροκίνητα.</string>
+    <string name="update_needs_clean_flash_message">Αυτή η ενημέρωση δεν μπορεί να εγκατασταθεί μέσω της εφαρμογής ενημέρωσης. Βεβαιωθείτε ότι έχετε δημιουργήσει αντίγραφα ασφαλείας σε εξωτερική συσκευή και μορφοποιήστε τον εσωτερικό χώρο αποθήκευσης (μορφή δεδομένων) για να εγκαταστήσετε αυτό το zip. Κάντε λήψη και εγκαταστήστε το φερμουάρ με μη αυτόματο τρόπο από τον ιστότοπο.</string>
     <string name="export_channel_title">Ολοκλήρωση εξαγωγής</string>
     <string name="new_updates_channel_title">Νέες ενημερώσεις</string>
     <string name="ongoing_channel_title">Λήψεις σε εξέλιξη</string>
