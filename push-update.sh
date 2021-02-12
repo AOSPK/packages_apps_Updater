@@ -1,6 +1,6 @@
 #!/bin/sh
 
-updates_dir=/data/lineageos_updates
+updates_dir=/data/aospk_updates
 
 if [ ! -f "$1" ]; then
    echo "Usage: $0 ZIP [UNVERIFIED]"
