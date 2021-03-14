@@ -15,8 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Updater</string>
-    <string name="display_name">Updater</string>
+    <string name="app_name">Aktualizácie</string>
+    <string name="display_name">Aktualizácie</string>
     <!-- Directory where the update files will be downloaded and stored.
          WARNING: The application can and will delete any unknown file. -->
     <!-- Directory where the downloads will be exported to.
@@ -28,119 +28,119 @@
           {version} - Build version
           {ziptype} - Build ziptype (vanilla/gapps)
     -->
-    <string name="verification_failed_notification">Verification failed</string>
-    <string name="verifying_download_notification">Verifying update</string>
-    <string name="downloading_notification">Downloading</string>
-    <string name="download_paused_notification">Download paused</string>
-    <string name="download_paused_error_notification">Download error</string>
-    <string name="download_completed_notification">Download completed</string>
-    <string name="download_starting_notification">Starting download</string>
-    <string name="update_failed_notification">Update failed</string>
-    <string name="installation_suspended_notification">Installation suspended</string>
-    <string name="new_updates_found_title">New updates</string>
+    <string name="verification_failed_notification">Overovanie zlyhalo</string>
+    <string name="verifying_download_notification">Overenie aktualizácie</string>
+    <string name="downloading_notification">Sťahovanie</string>
+    <string name="download_paused_notification">Sťahovanie pozastavené</string>
+    <string name="download_paused_error_notification">Chyba pri sťahovaní</string>
+    <string name="download_completed_notification">Sťahovanie dokončené</string>
+    <string name="download_starting_notification">Spúšťam sťahovanie</string>
+    <string name="update_failed_notification">Aktualizácia zlyhala</string>
+    <string name="installation_suspended_notification">Inštalácia bola odložená</string>
+    <string name="new_updates_found_title">Nové aktualizácie</string>
     <string name="text_download_speed">%1$s, %2$s/s</string>
-    <string name="pause_button">Pause</string>
-    <string name="resume_button">Resume</string>
-    <string name="suspend_button">Suspend</string>
-    <string name="installing_update">Installing update package</string>
-    <string name="installing_update_error">Install error</string>
-    <string name="installing_update_finished">Update installed</string>
-    <string name="finalizing_package">Finalizing package installation</string>
-    <string name="preparing_ota_first_boot">Preparing for first boot</string>
-    <string name="dialog_prepare_zip_message">Preliminary update preparation</string>
-    <string name="dialog_battery_low_title">Low battery</string>
-    <string name="dialog_battery_low_message_pct">The battery level is too low, you need at least <xliff:g id="percent_discharging">%1$d</xliff:g>%% of the battery to continue, <xliff:g id="percent_charging">%2$d</xliff:g>%% if charging.</string>
-    <string name="reboot">Reboot</string>
-    <string name="menu_refresh">Refresh</string>
-    <string name="menu_preferences">Preferences</string>
-    <string name="menu_auto_updates_check">Auto updates check</string>
-    <string name="menu_auto_updates_check_interval_daily">Once a day</string>
-    <string name="menu_auto_updates_check_interval_weekly">Once a week</string>
-    <string name="menu_auto_updates_check_interval_monthly">Once a month</string>
-    <string name="menu_auto_updates_check_interval_never">Never</string>
-    <string name="menu_auto_delete_updates">Delete updates when installed</string>
-    <string name="menu_delete_update">Delete</string>
-    <string name="menu_copy_url">Copy URL</string>
-    <string name="menu_export_update">Export update</string>
-    <string name="menu_show_changelog">Show changelog</string>
-    <string name="menu_ab_perf_mode">Prioritize update process</string>
+    <string name="pause_button">Pozastaviť</string>
+    <string name="resume_button">Pokračovať</string>
+    <string name="suspend_button">Odložiť</string>
+    <string name="installing_update">Inštalácia balíka aktualizácie</string>
+    <string name="installing_update_error">Chyba pri inštalácii</string>
+    <string name="installing_update_finished">Aktualizácia nainštalovaná</string>
+    <string name="finalizing_package">Dokončuje sa inštalácie balíka</string>
+    <string name="preparing_ota_first_boot">Príprava na prvé spustenie</string>
+    <string name="dialog_prepare_zip_message">Predbežná príprava aktualizácie</string>
+    <string name="dialog_battery_low_title">Slabá batéria</string>
+    <string name="dialog_battery_low_message_pct">Úroveň nabitia batérie je príliš nízka, budete potrebovať aspoň <xliff:g id="percent_discharging">%1$d</xliff:g>%% batérie na pokračovanie, <xliff:g id="percent_charging">%2$d</xliff:g>%% pri nabíjaní.</string>
+    <string name="reboot">Reštartovať</string>
+    <string name="menu_refresh">Obnoviť</string>
+    <string name="menu_preferences">Predvoľby</string>
+    <string name="menu_auto_updates_check">Automatická kontrola aktualizácií</string>
+    <string name="menu_auto_updates_check_interval_daily">Raz denne</string>
+    <string name="menu_auto_updates_check_interval_weekly">Raz za týždeň</string>
+    <string name="menu_auto_updates_check_interval_monthly">Raz za mesiac</string>
+    <string name="menu_auto_updates_check_interval_never">Nikdy</string>
+    <string name="menu_auto_delete_updates">Vymazať aktualizácie po nainštalovaní</string>
+    <string name="menu_delete_update">Vymazať</string>
+    <string name="menu_copy_url">Kopírovať URL</string>
+    <string name="menu_export_update">Export aktualizácie</string>
+    <string name="menu_show_changelog">Zobraziť zoznam zmien</string>
+    <string name="menu_ab_perf_mode">Uprednostňovať proces aktualizácie</string>
     <!-- Sourceforge mirrors -->
-    <string name="sf_dialog_title">Available Mirrors</string>
-    <string name="menu_sf_mirrors">Mirrors</string>
-    <string name="sf_mirror_preferences">Mirror preferences</string>
-    <string name="rank_and_sort_mirrors">Rank and sort the mirrors</string>
-    <string name="snack_updates_found">New updates found</string>
-    <string name="snack_no_updates_found">No new updates found</string>
-    <string name="snack_updates_check_failed">The update check failed. Please check your internet connection and try again later.</string>
-    <string name="snack_updates_server_down">Bad gateway, could not connect to server. Please try again later!</string>
-    <string name="snack_updates_download_client">Failed to initiate download client. RIP</string>
-    <string name="snack_ranking_mirrors">Ranking mirrors. Please wait!</string>
-    <string name="snack_fetching_mirrors">Fetching mirrors. Please wait!</string>
-    <string name="snack_failed_mirrors">Failed to fetch mirrors.</string>
-    <string name="snack_fetched_mirrors">Fetched mirrors. Done!</string>
-    <string name="snack_set_mirror">Mirror set to %1$s!</string>
-    <string name="snack_force_mirror">Previously selected mirror %1$s was not found! Fallback to default.</string>
-    <string name="snack_download_failed">The download failed. Please check your internet connection and try again later.</string>
-    <string name="snack_download_verification_failed">The update verification failed.</string>
-    <string name="snack_download_verified">Download completed.</string>
-    <string name="snack_update_not_installable">This update can\'t be installed on top of the current build.</string>
+    <string name="sf_dialog_title">Dostupné zdroje</string>
+    <string name="menu_sf_mirrors">Zdroje</string>
+    <string name="sf_mirror_preferences">Nastavenia zdrojov</string>
+    <string name="rank_and_sort_mirrors">Poradie a triedenie zdrojov</string>
+    <string name="snack_updates_found">Našli sa nové aktualizácie</string>
+    <string name="snack_no_updates_found">Nenašli sa žiadne nové aktualizácie</string>
+    <string name="snack_updates_check_failed">Kontrola aktualizácií zlyhala. Skontrolujte prosím vaše internetové pripojenie a skúste to znova neskôr.</string>
+    <string name="snack_updates_server_down">Chybná brána, nemožno sa pripojiť na server. Skúste to znova neskôr!</string>
+    <string name="snack_updates_download_client">Nepodarilo sa spustiť klienta sťahovanie. RIP</string>
+    <string name="snack_ranking_mirrors">Triedenie zdrojov. Čakajkte prosím!</string>
+    <string name="snack_fetching_mirrors">Načítavanie zdrojov. Čakajte prosím!</string>
+    <string name="snack_failed_mirrors">Nepodarilo sa načítať zdroje.</string>
+    <string name="snack_fetched_mirrors">Zdroje načítané. Hotovo!</string>
+    <string name="snack_set_mirror">Zdroj nastavený na %1$s!</string>
+    <string name="snack_force_mirror">Skôr zvolený zdroj %1$s nebol nájdený! Vrátiť sa na predvolené nastavenie.</string>
+    <string name="snack_download_failed">Sťahovanie zlyhalo. Skontrolujte vaše pripojenie a skúste to znovu.</string>
+    <string name="snack_download_verification_failed">Overovanie aktualizácie zlyhalo.</string>
+    <string name="snack_download_verified">Sťahovanie dokončené.</string>
+    <string name="snack_update_not_installable">Táto aktualizácia sa nedá nainštalovať na aktuálnu zostavu.</string>
     <string name="header_title_text">ArrowOS\n%1$s</string>
     <string name="header_android_version">Android <xliff:g id="version" example="7.1.2">%1$s</xliff:g></string>
-    <string name="header_last_updates_check">Last checked: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
+    <string name="header_last_updates_check">Posledná kontrola: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
     <string name="list_build_version">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
     <string name="list_build_version_date">ArrowOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
-    <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
-    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
-    <string name="list_verifying_update">Verifying update</string>
-    <string name="list_no_updates">No new updates found. To manually check for new updates, use the Refresh button.</string>
-    <string name="action_download">Download</string>
-    <string name="action_pause">Pause</string>
-    <string name="action_resume">Resume</string>
-    <string name="action_install">Install</string>
+    <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> z <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> z <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
+    <string name="list_verifying_update">Overenie aktualizácie</string>
+    <string name="list_no_updates">Neboli nájdené žiadne nové aktualizácie. Ak chcete manuálne vyhľadať nové aktualizácie, použite tlačidlo Obnoviť.</string>
+    <string name="action_download">Stiahnuť</string>
+    <string name="action_pause">Pozastaviť</string>
+    <string name="action_resume">Pokračovať</string>
+    <string name="action_install">Nainštalovať</string>
     <string name="action_info">Info</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_cancel">Cancel</string>
-    <string name="confirm_delete_dialog_title">Delete file</string>
-    <string name="confirm_delete_dialog_message">Delete the selected update file?</string>
-    <string name="apply_update_dialog_title">Apply update</string>
-    <string name="apply_update_dialog_message">You are about to upgrade to <xliff:g id="update_name">%1$s</xliff:g>.\n\nIf you press <xliff:g id="ok">%2$s</xliff:g>, the device will restart itself in recovery mode to install the update.\n\nNote: This feature requires a compatible Recovery or updates will need to be installed manually.</string>
-    <string name="apply_update_dialog_message_ab">You are about to upgrade to <xliff:g id="update_name">%1$s</xliff:g>.\n\nIf you press <xliff:g id="ok">%2$s</xliff:g>, the device will begin installing in the background.\n\nOnce completed, you will be prompted to reboot.</string>
-    <string name="cancel_installation_dialog_message">Cancel the installation?</string>
-    <string name="label_download_url">Download URL</string>
-    <string name="toast_download_url_copied">URL Copied</string>
-    <string name="dialog_export_title">Exporting update</string>
-    <string name="notification_export_success">Update exported</string>
-    <string name="notification_export_fail">Export error</string>
-    <string name="toast_already_exporting">Already exporting an update</string>
+    <string name="action_delete">Vymazať</string>
+    <string name="action_cancel">Zrušiť</string>
+    <string name="confirm_delete_dialog_title">Vymazať súbor</string>
+    <string name="confirm_delete_dialog_message">Vymazať vybraný súbor aktualizácie?</string>
+    <string name="apply_update_dialog_title">Aplikovať aktualizáciu</string>
+    <string name="apply_update_dialog_message">Idete aktualizovať na <xliff:g id="update_name">%1$s</xliff:g>.\n\nAk stlačíte <xliff:g id="ok">%2$s</xliff:g>, zariadenie sa reštartuje do recovery režimu na inštaláciu aktualizácie.\n\nPoznámka: Táto funkcia vyžaduje kompatibilné Recovery alebo treba aktualizácie nainštalovať ručne.</string>
+    <string name="apply_update_dialog_message_ab">Idete aktualizovať na <xliff:g id="update_name">%1$s</xliff:g>.\n\nAk stlačíte <xliff:g id="ok">%2$s</xliff:g>, zariadenie začne inštaláciu v pozadí.\n\nPo ukončení budete vyzvaný na reštart.</string>
+    <string name="cancel_installation_dialog_message">Zrušiť inštaláciu?</string>
+    <string name="label_download_url">URL pre stiahnutie</string>
+    <string name="toast_download_url_copied">URL skopírované</string>
+    <string name="dialog_export_title">Export aktualizácie</string>
+    <string name="notification_export_success">Aktualizácia exportovaná</string>
+    <string name="notification_export_fail">Chyba exportu</string>
+    <string name="toast_already_exporting">Aktualizácia sa už exportuje</string>
     <plurals name="eta_seconds">
-        <item quantity="one">1 second left</item>
-        <item quantity="few"><xliff:g id="count">%d</xliff:g> seconds left</item>
-        <item quantity="many"><xliff:g id="count">%d</xliff:g> seconds left</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> seconds left</item>
+        <item quantity="one">Zostáva 1 sekunda</item>
+        <item quantity="few">Zostávajú <xliff:g id="count">%d</xliff:g> sekundy</item>
+        <item quantity="many">Zostáva <xliff:g id="count">%d</xliff:g> sekúnd</item>
+        <item quantity="other">Zostáva <xliff:g id="count">%d</xliff:g> sekúnd</item>
     </plurals>
     <plurals name="eta_minutes">
-        <item quantity="one">1 minute left</item>
-        <item quantity="few"><xliff:g id="count">%d</xliff:g> minutes left</item>
-        <item quantity="many"><xliff:g id="count">%d</xliff:g> minutes left</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> minutes left</item>
+        <item quantity="one">Zostáva 1 minúta</item>
+        <item quantity="few">Zostávajú <xliff:g id="count">%d</xliff:g> minúty</item>
+        <item quantity="many">Zostáva <xliff:g id="count">%d</xliff:g> minút</item>
+        <item quantity="other">Zostáva <xliff:g id="count">%d</xliff:g> minút</item>
     </plurals>
     <plurals name="eta_hours">
-        <item quantity="one">1 hour left</item>
-        <item quantity="few"><xliff:g id="count">%d</xliff:g> hours left</item>
-        <item quantity="many"><xliff:g id="count">%d</xliff:g> hours left</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> hours left</item>
+        <item quantity="one">Zostáva 1 hodina</item>
+        <item quantity="few">Zostávajú <xliff:g id="count">%d</xliff:g> hodiny</item>
+        <item quantity="many">Zostáva <xliff:g id="count">%d</xliff:g> hodín</item>
+        <item quantity="other">Zostáva <xliff:g id="count">%d</xliff:g> hodín</item>
     </plurals>
-    <string name="update_on_mobile_data_title">Warning</string>
-    <string name="update_on_mobile_data_message">You\'re about to download an update package using mobile data which is likely going to cause high data usage. Would you like to proceed?</string>
-    <string name="checkbox_mobile_data_warning">Do not show again</string>
-    <string name="menu_mobile_data_warning">Mobile data warning</string>
-    <string name="blocked_update_dialog_title">Update blocked</string>
-    <string name="blocked_update_dialog_message">This update cannot be installed using the updater app. You may need a factory reset (wipes all data) to install this zip. Please download and install the zip manually.</string>
-    <string name="update_needs_clean_flash_message">This update cannot be installed via the updater app. Make sure to take backup on external device and format the internal storage (format data) to install this zip. Please download and install the zip manually from the website.</string>
-    <string name="export_channel_title">Export completion</string>
-    <string name="new_updates_channel_title">New updates</string>
-    <string name="ongoing_channel_title">Ongoing downloads</string>
-    <string name="update_failed_channel_title">Update failed</string>
+    <string name="update_on_mobile_data_title">Varovanie</string>
+    <string name="update_on_mobile_data_message">Chystáte sa stiahnuť aktualizáciu pomocou mobilných dát, čo pravdepodobne zapríčiní veľký prenos mobilných dát. Prajete si pokračovať?</string>
+    <string name="checkbox_mobile_data_warning">Nezobrazovať znovu</string>
+    <string name="menu_mobile_data_warning">Upozornenie mobilných dát</string>
+    <string name="blocked_update_dialog_title">Aktualizácia bola zablokovaná</string>
+    <string name="blocked_update_dialog_message">Táto aktualizácia sa nedá nainštalovať pomocou aplikácie Aktualizácie. Pre inštaláciu tohto súboru zip budete potrebovať reset do továrenských nastavení (vymaže všetky dáta). Stiahnite si a nainštalujte súbor zip ručne.</string>
+    <string name="update_needs_clean_flash_message">Táto aktualizácia sa nedá nainštalovať pomocou aplikácie Aktualizácie. Aby ste mohli nainštalovať tento zip, nezabudnite vykonať zálohu na externé zariadenia a naformátovať interné úložisko (formátovať dáta). Stiahnite z webových stránok súbor zip a ručne nainštalujte.</string>
+    <string name="export_channel_title">Dokončenie exportu</string>
+    <string name="new_updates_channel_title">Nové aktualizácie</string>
+    <string name="ongoing_channel_title">Prebiehajúce sťahovania</string>
+    <string name="update_failed_channel_title">Aktualizácia zlyhala</string>
     <string name="arrowos_display_version">ArrowOS <xliff:g id="version">%1$s</xliff:g> | <xliff:g id="variant">%2$s</xliff:g></string>
-    <string name="build_info_card_title">Current build information</string>
+    <string name="build_info_card_title">Informácie o aktuálnom zostavení</string>
 </resources>
